@@ -1,0 +1,32 @@
+G - Gecia
+M - Mike
+B - Byron
+
+1. Get data
+    1. Download PDFs and metadata - B
+    2. Parse acknowledgements - M
+    3. Wait for step 2 and repeat
+    4. Figure out what features to extract (bag words) - G
+    5. Extract features - M
+    6. Figure out what to compare with (US news and world report) - B/M/G
+    7. Get comparison data - B
+2. Design models - G
+    1. Research related work and what models they used (if any)
+    2. Figure out what models to try and why
+    3. Figure out evaluation methodology to use for model
+    4. Wait for step 4 and repeat
+3. Write code to train and test models
+4. Analyze results
+    1. Is this worth using?
+    2. How does it compare to current rankings?
+    3. What are the insights?
+    4. What did we learn about the algorithm?  Did we improve on it in some way?
+    5. What did we learn about the data? Is using acknowledgement sections a viable approach?
+    6. Future recommendations?
+    7. How does this compare to the other models we or other people used?
+5. Make poster
+    1. Figure out what graphs we want to include
+    2. Figure out what text we want to include
+    3. Layout poster
+    4. Make it pretty
+6. Write report
