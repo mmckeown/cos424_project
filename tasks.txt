@@ -30,3 +30,5 @@ B - Byron
     3. Layout poster
     4. Make it pretty
 6. Write report
+
+29. Blog about this
