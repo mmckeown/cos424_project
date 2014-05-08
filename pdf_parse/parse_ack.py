@@ -33,10 +33,11 @@ def parse_ack (filename) :
             page_line = 1
 
         # Create a stripped line where we remove 
-        # page breaks, whitespace, and convert
+        # page breaks, colons, whitespace, and convert
         # all characters to lower case to compare
         # headings to identify the acknowledgment section
         stripped_line = re.sub("\f", "", line)
+        stripped_line = re.sub(":", "", stripped_line)
         stripped_line = "".join(stripped_line.split())
         stripped_line = stripped_line.lower()
         if not in_ack :
@@ -51,7 +52,13 @@ def parse_ack (filename) :
             if stripped_line == "tableofcontents" or \
                stripped_line == "dedication" or \
                stripped_line == "abstract" or \
-               stripped_line == "abstractofthedissertation" :
+               stripped_line == "abstractofthedissertation" or \
+               stripped_line == "abstractofdissertation" or \
+               stripped_line == "abstractofthethesis" or \
+               stripped_line == "abstractofthesis" or \
+               stripped_line == "chapter1" or \
+               stripped_line == "chapteri" or \
+               stripped_line == "introduction" :
                 break
             else :
                 #sys.stdout.write(cleanup_line(line))
