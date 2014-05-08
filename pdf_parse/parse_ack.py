@@ -24,13 +24,16 @@ def parse_ack (filename) :
     # Process pdf contents
     contents = open(txt_contents, "r")
     in_ack = False
+    ack_page_begin = 0
     page_line = 0
+    page_count = 1
     acknowledgement_text = ""
     for line in contents:
         if not "\f" in line :
             page_line += 1
         else :
             page_line = 1
+            page_count += 1
 
         # Create a stripped line where we remove 
         # page breaks, colons, whitespace, and convert
@@ -46,7 +49,7 @@ def parse_ack (filename) :
                stripped_line == "acknowledgments" or \
                stripped_line == "acknowledgements" :
                 in_ack = True
-                #sys.stdout.write(cleanup_line(line))
+                ack_page_begin = page_count
                 acknowledgement_text += cleanup_line(line)
         else :
             if stripped_line == "tableofcontents" or \
@@ -58,10 +61,19 @@ def parse_ack (filename) :
                stripped_line == "abstractofthesis" or \
                stripped_line == "chapter1" or \
                stripped_line == "chapteri" or \
-               stripped_line == "introduction" :
-                break
+               stripped_line == "introduction" or \
+               stripped_line == "curriculumvitae" :
+                # The beginning and end of an acknowledgment
+                # should not be on the same page, i.e. no two
+                # headings should be on the same page
+                if ack_page_begin != page_count :
+                    break
+                else :
+                    # Continue looking if headings are on the same
+                    # page, this is likely the table of contents
+                    in_ack = False
+                    acknowledgement_text = ""
             else :
-                #sys.stdout.write(cleanup_line(line))
                 acknowledgement_text += (cleanup_line(line))
     contents.close()
 

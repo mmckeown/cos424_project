@@ -1,0 +1,551 @@
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/sample_theses/thesis1.pdf...
+ACKNOWLEDGMENTS
+First and foremost, to my parents, Jan and Denise Zanutto; you have always let
+me follow my passions in life and have instilled in me the desire to work hard. Thank you
+for teaching me patience, but also teaching me it’s good to be unique and never settle for
+mediocrity. To my committee members and chair: Dr. Giuliani, Dr. Tanner and Dr. PriceSharps; thank you for pushing me along the way and making sure my final work was
+something of worth. I had a great team behind me and you all made the process as
+painless as possible. To my muse, Meghan Apper, without whom the idea for this
+dissertation would not be possible. You have been there when I’ve needed you most and
+your idea gave me the building blocks for my research, thank you for being you and
+understanding me. To the woman who helped me refine my words and made me look
+more intelligent than I am, my editor, Cristina Menjivar. Thank you for not only being a
+friend, but also for being able to read my entire work and make sense of it. Lastly, to my
+love and partner in life, Nathan Williams. You have been there from the beginning and
+have made sure I finish what I’ve started. Thank you for always providing me with light I
+need to find my way and being able to tolerate the long hours. To all those who
+participated in my research also, thank you, for without you I would not be able to test
+my hypotheses and be able to complete my research.
+
+iv
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/sample_theses/thesis10.pdf...
+ACKNOWLEDGEMENTS
+
+“I am a part of all that I have met; yet all experience is an arch wherethrough gleams that
+untraveled world, whose margin fades for ever and for ever when I move.”
+–Alfred, Lord Tennyson (1809-1892)
+Ulysses (1842)
+
+The research of this dissertation would not have been possible without the efforts
+of many others. Whether it was through shared resources, scholarly input, teaching
+techniques, or involvement in data collection, these contributions were invaluable.
+Therefore, I would like to acknowledge several individuals who deserve my utmost
+gratitude for their role in my doctoral pursuits.
+I would first and foremost like to thank my advisor, Dr. Steven Popoff. From the
+first days of medical school when taking Gross Anatomy, it was clear that not only was
+he an established scientist, but also a great teacher. I was confident that under his tutelage
+I would learn how to be a competent, independent scientist as well as an academician. I
+would also like to thank Dr. Mary Barbe who acted as a co-advisor to me; always
+available for immediate input and providing direction in the project based on her breadth
+of knowledge across many fields. I am also grateful for the efforts of my other
+distinguished dissertation committee members, Drs. Victor Rizzo, Dianne Soprano, and
+Joan Richtsmeier. Dr. Soprano, along with Tracey Hinton, provided a well-structured and
+interactive M.D., Ph.D. program that fostered the success of its students. Dr. Richtsmeier,
+as well as Talia Pankratz, were instrumental in our analysis of the craniofacial phenotype
+seen in our mouse model. The results of this collaboration were very fruitful and I was
+iv
+
+fortunate to have been able to learn so much from an established expert in craniofacial
+development. I would also like to thank Dr. Maureen Gannon for providing us our mouse
+model and being very engaged in the research of our lab. My thanks to Drs. Nancy
+Pleshko and Cushla McGoverin for their resources and time in using the FT-IR analysis. I
+am also grateful for the efforts of Ray Meade and others at the University of
+Pennsylvania Electron Microscopy Center.
+I would also like to acknowledge other graduate students, faculty, and staff in the
+Department of Anatomy and Cell Biology. Christina Mundy provided countless hours of
+input into the manuscript and was a great lab mate to have. Dr. Robin Pixley and
+Roshanak Razmpour were helpful in processing samples for micro-CT and histologic
+examination, respectively. And our front office staff of Anita Li, Sydnora Simon, and
+John Waterman, was always very helpful in processing vital paperwork.
+Lastly, my undying gratitude goes out to my family and close friends, the ones
+who lived through the inevitable emotional ups and downs of my graduate education.
+They were a source of support whenever it was needed, whether in the form of a bike ride,
+a chat, or a drink. Most of all, to my parents and sister, they are the reason for my work
+ethic, my pursuit of knowledge, and my desire to push myself to achieve success in any
+life endeavor. Fittingly, Tennyson’s Ulysses concludes with this line: “To strive, to seek,
+to find, and not to yield.”
+
+v
+
+Vivitur ingenio, caetera mortis erunt.
+Genius lives on, all else is mortal.
+
+–Andreas Vesalius (1514-1564)
+De humani corporis fabrica libri septem (1543)
+
+vi
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/sample_theses/thesis11.pdf...
+ACKNOWLEDGEMENTS
+So many people have been overwhelmingly supportive and understanding of this work that
+surely my gratitude cannot be adequately expressed in just words here. Without the guidance,
+help, and support of those around me, completing this research would not have been possible. My
+hope is that one day, this work will translate to clinical application that serves a patient in need.
+First and foremost, I want to thank my advisor, Dr. Ronald F. Tuma. Dr. Tuma’s
+expertise and knowledge exist as a benchmark for which I only hope to one day be able to begin
+to measure up to. His guidance and input have been tremendously valuable and this research
+would not have been possible without him. Further his manner of mentoring and supervision are
+also paramount. He provides guidance and leadership but in a way that the student is free to try
+new techniques and experiments while ultimately managing his own research. His leadership
+has greatly impacted my scientific thinking and developed my skills as a physician scientist.
+Almost as important, Dr. Tuma has not only helped develop me as a scientist but also as a
+person. He truly is a friend. Ron was there for multiple hardships in my personal life and I
+cannot imagine going through them without his guidance or while working for someone else.
+I am also immensely grateful to Dr. Doina Ganea. She truly stands as an expert of
+immunology and also molecular biology. I want to thank her for her ongoing guidance as well as
+entertaining my numerous surprise visits at her door with questions or data to examine. In
+addition, I want to express my gratitude to Dr. Sara Jane Ward. Without her immense
+knowledge of behavioral studies and morphine tolerance, a lot of this work would not have been
+possible. Both of these scientists have been instrumental in my completion of this project and
+my development as a scientist.
+
+iv
+
+I owe a multitude of appreciation to the members of my committee. Dr. Rosario Scalia,
+Dr. Victor Rizzo, and Dr. Laurie Kilpatrick. I wanted to thank them for their support and input
+throughout the years as well as apologize for any emails I may have sent them at 4am to schedule
+meetings. I would like to thank the Department of Cellular and Molecular Physiology for being
+supportive of my work and helping to impact my graduate education. Lastly, I want to say thank
+you to the Center for Substance Abuse Research under the direction of Dr. Ellen Unterwald. Dr.
+Unterwald’s center truly carved out a home for us and our work in the Tuma lab. Also, a
+tremendously big thank you to Melva Smith and Lynn Heth who have been my savior on far too
+many occasions. Also, thank you to Dr. John Gaughan for his assistance with the biostatics of the
+Rhodamine studies.
+My time in the laboratory has allowed me to meet and work with so many talented
+individuals that were always willing to help and teach. In Dr. Ganea’s laboratory I want to thank
+Virginia Koceida, Sabina Adhikary, Fran Emig, Dr. Mario Skarica, Dr. Weimin Kong, and Dr.
+Jimmy Yen. Thank you guys for being so open to answering questions and teaching me. In my
+own laboratory I want to thank Dr. Ming Zhang, Dr. Hongbo Li, and Richard Ronca. Again, your
+guidance and help have been not only tremendously helpful but also inspiring. Hongbo in
+particular, this could not have been completed without you and I will be forever grateful for your
+assistance on so many occasions.
+None of this would have been possible without an outside support system. I think it is
+appropriate to thank all the people that have put up with my tardiness, cancelled plans, complaints,
+and for just being there throughout the years. A huge thanks to Matthew Santiago, not only for
+being a great friend but for being an amazing Chief of Operations and keeping Temple University
+Emergency Medical Services running in my absence. Thank you for covering my shifts all the
+v
+
+nights I was late. Thank you to Rebecca Vallas for talking me through so many problems and
+providing some perspective. To this day, we may be the only people to have discussed cannabinoid
+receptor knockout mice at the Dunkin Donuts at Broad and Alleghany. And lastly, thank you to
+Nathan Carr-Whealy. I don’t know where to begin other than to say you have been the voice of
+reason and thank you for so many late night dinner runs to rejuvenate. You always do that.
+And most importantly, I want to thank my family. For without them and their love and
+support, I would have never completed this project. Thank you to my aunt Darlene for always
+making me laugh. Thank you to my brother, Kenneth for always listening to my problems and
+talking me through them. Your expertise in clinical stroke treatment has also been hugely helpful
+and inspiring to me. I want to thank you and your wife, Erin, for bringing the kids, Tyler and
+Makenna, to visit me on so many weekends in lab. Some of my favorite memories of lab will be
+your kids feeding my mice Fruit Loops and examining the big pickles hanging in the lobby of the
+medical school. Lastly, but certainly not least, thank you Mom and Dad. I do not know what I
+would have done without you guys. Thank you both for always being so understanding and
+supportive. Thank you for all my late night phone calls and for always making me feel better when
+lab didn’t treat me the way I hoped it would. The dedication I watched you two put forth on so
+many projects growing up really inspired me to see this project through. And so many times
+throughout my life you looked at me and said, “Can do.” I kept that in mind. Thank you.
+
+vi
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/sample_theses/thesis12.pdf...
+Acknowledgements
+I would like to thank the faculty members who have helped me with this project. Dr.
+Randy Wyatt provided much guidance, as well as appropriate literature and ideas. I would
+like to thank Dr. Samuel Gerson for encouraging me to expand my analysis, and Dr. Valory
+Mitchell for her sharp editing skills. Without her, I doubt I would have proposed.
+I would like to thank all of my friends and colleagues who pushed me to think more
+clearly upon the subject matter and encouraged my passion for the topic.
+Finally, I would like to thank my family. I thank my parents for believing in me and
+supporting me. My wife, Erin Harrell, was unwavering in her confidence in me. I cannot
+imagine a life without her seeing me through. I would also like to thank my daughter, Ara
+Jean, who sacrificed countless quality hours with me, and gave up ever being read three
+important books of Dr. Seuss’s by her mother.
+
+v
+
+AN ANALYSIS OF DR. SEUSS THROUGH THE LENS OF ERIK ERIKSON
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/sample_theses/thesis13.pdf...
+Acknowledgements
+I wish to express sincere appreciation to my dissertation committee. To my chair,
+Dr. Mekel Harris, for guiding me through this process—it would have been far more
+difficult without your research expertise and support. To my reader, Dr. Joshua Wyner,
+for his continued support not only as a member of my dissertation committee, but also a
+professor and advocate throughout my time as a doctoral student. And to my research
+assistant, Krystol McIntyre, for her genuine interest in this project.
+I am grateful to have such a supportive family. Without my parents’ words of
+encouragement and my sisters’ undying belief in my ability, I would not have journeyed
+into the world of graduate school.
+Thank you to my friends and colleagues who provided endless support. I would
+especially like to acknowledge Christine DiRubbo, who spent many sleepless nights with
+me, studying in coffee shops and on patios. Thank you for the motivation,
+encouragement, and friendship.
+Most importantly, I wish to express my deepest gratitude to my biggest supporter,
+my husband Nicholas Greenfield. Thank you for moving across the country in support of
+my aspirations, for carrying me through the worst of the last four years, and for
+celebrating with me when milestones—however small—were met. Your work ethic is
+inspirational and your belief in me is uplifting.
+
+!
+
+!
+
+v
+
+!
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/sample_theses/thesis14.pdf...
+ACKNOWLEDGMENTS
+I thank my doctoral advisor, Dr. Michael Autieri, for his constant guidance and instruction
+in my completion of this dissertation.
+I thank my dissertation advisory committee members, Drs. Satoru Eguchi, Rosario Scalia,
+Victor Rizzo, and Judith Litvin-Daniels for their suggestions.
+I thank Dr. Dianne Soprano for her guidance as Dean of the MD/PhD program.
+I thank my fellow lab members, past and present, Sheri Kelemen, Khatuna Gabunia,
+Stephen Ellison, James Richards, Laura Sommerville, Tony Cuneo, and Alex Miecyjak for
+their help and friendship.
+I thank Dr. Richard Frisque, whose guidance in my completion of my undergraduate thesis
+at the Pennsylvania State University was essential to my acceptance into the combined
+MD/PhD program here at Temple University and, more importantly, in whose lab I had my
+first crucial scientific experience.
+I thank Kyle Preston for his collaboration and diligent work contributing to Figure 11 and
+Table 3 of this thesis.
+I thank my parents for their love and support.
+I thank my wife, Jennie, for her love and support and her always understanding when I
+needed to spend a late night or a weekend in the lab.
+
+iii
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/sample_theses/thesis15.pdf...
+Acknowledgements
+I wish to extend my sincere thanks and appreciation to my dissertation committee
+members, Dr. Loren Hill and Dr. Debra Warner, who have played an integral role in the
+creation of this research and who extended generous guidance throughout this process.
+Their mentorship position has not only helped me complete this dissertation, but it has
+helped me grow through this program as I become an independent practitioner and
+researcher. Their patience and support has helped me complete this process and I would
+like to acknowledge their vital role.
+I would also like to acknowledge the participating agencies that allowed me the
+opportunity to conduct research at their facilities. The gentlemen I was in communication
+with and their board members served a paramount role in allowing me to conduct the
+research in this dissertation by allowing access to their enrolled participants. These two
+agencies have an established background in serving addiction populations for many years
+and this research could not have been conducted without their efforts. I can only hope to
+return the favor one day.
+Above all, I wish to thank my family and friends for their continued support and
+belief in me. Graduate school has been a very long process and they have been there to
+provide support, love, and humor to help me through even the toughest days. I can only
+hope that this work serves as a thank you for their efforts in helping me succeed.
+
+	  
+
+v
+
+	  
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/sample_theses/thesis16.pdf...
+Acknowledgements
+I would like to acknowledge and thank Dr. Ken Fogel for his guidance, support,
+and patience throughout this process.
+I wish to extend my appreciation to Dr. Kim Dell’Angela for her discerning eye
+and critical thinking.
+I owe a debt of gratitude to Stephanie Bajo and Megan Golla for their emotional
+support and wisdom.
+Finally, I wish to thank my fiancé, Matthew Fagert, and my mother, Mylene
+Tonyan, for believing in me and encouraging me.
+
+iv
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/sample_theses/thesis17.pdf...
+Acknowledgments
+Dr. Chandra Mehrotra, thank you for your guidance and support throughout this
+amazing journey. You believed in me when even I did not. You are a mentor, coach, and
+collaborator all in one. I wish I could have spent more time with you. Through the many
+challenges, you have definitely helped me transform.
+To my committee members, Dr. Lana Riggins Sampson and Dr. John Flynn,
+thank you for your support and guidance. Thank you for your patience and for accepting
+me.
+To my workplace that allowed me the opportunity to study the teams who do such
+amazing work. Your support has allowed me to take the extra steps necessary and to
+complete this effort.
+To the participants, thank you for your honesty and enthusiasm, and for taking the
+risk to participate.
+To the village at work, you guided and supported me along this magnificent
+journey. This is the beginning of something new. Thank you.
+
+iv
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/sample_theses/thesis18.pdf...
+Acknowledgments
+With deep gratitude, I acknowledge several supporters of my research. Foremost,
+this dissertation would not be possible without the support of the principal and other
+administrators at the site of my study. To you, and your timely responsiveness to my
+requests, and your willingness to let me be a part of your community amidst all of the
+demands on your time, thank you. I also owe a special thank you to the assistant principal
+who served as an important initial point of contact. You were instrumental to facilitating
+my access to the school. I cannot name you to protect the confidentiality of the site, but I
+am immensely grateful to your support.
+Moreover, interviewing students and observing meetings of the school’s gaystraight alliance allowed me to contextualize and deepen my understanding of it in
+important ways. I am deeply grateful to those who allowed me to listen to and learn from
+their personal journeys and stories. I will always cherish this opportunity. To all who
+generously made themselves available to complete surveys or participate in interviews
+despite their busy schedules, thank you. Each interviewee graciously welcomed me to
+their school, with openness to answering my questions and sharing their perspectives. It
+was a privilege to learn about your school and I hope that I have adequately shared your
+story.
+My committee and peer reviewer deserve special mention. I am especially thankful
+to my committee chair, Dr. Donna Infeld, for her support, guidance, and timely feedback.
+Her responsiveness from beginning to end of the dissertation process was above and
+beyond what I could have hoped for and made this experience so much more manageable. I
+v
+
+am also grateful to my committee members, Dr. Collin Green and Dr. Susan Swayze, for
+their guidance along the way. I especially appreciate my external reviewers, Dr. Carlos
+Rodriguez, Principal Researcher at the American Institutes for Research, and Mr. Kevin
+Jennings, former Assistant Deputy Secretary for the Office of Safe and Drug-Free Schools
+at the U.S. Department of Education and current Executive Director of the Arcus
+Foundation. Their willingness to serve as reviewers and contribute their expertise is deeply
+valued. Finally, I would like to acknowledge Dr. Karen Francis, Senior Researcher at the
+American Institutes for Researcher, who generously offered her time to serve as my peer
+reviewer, providing an independent and insightful perspective in key ways.
+
+vi
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/sample_theses/thesis19.pdf...
+Acknowledgments
+Thanks to Dr. Garvey House always providing objective and candid advice when
+I needed it the most. Thanks to Dr. Laura Hutt for your listening ear and support. Thank
+you for your valuable time, Dr. Linda Dell’Osso and Dr. Timothy Price while serving as
+members of my dissertation committee.
+Thanks to all my family for their constant support and unselfish love.
+
+iv
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/sample_theses/thesis2.pdf...
+Acknowledgments
+I wish to express my sincere appreciation to my first year advisor and chair, Dr. Ali
+Jazayeri, for giving me the opportunity to engage in this research and for providing me
+with educational guidance, support, and encouragement. Likewise, this study would not
+have been possible without the expertise and support of my reader and current advisor, Dr.
+Mekel Harris, whose continued guidance has been invaluable to my education and career.
+I am also grateful to Dr. Stefan Snyder and the staff at Alpha Health Care for allowing me
+to utilize the space and patients within the weight loss clinics as the primary source of data
+collection. Additionally, I wish to thank my parents and my fiancée, Misia, for their
+incredible support and encouragement during my graduate training.
+
+v
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/sample_theses/thesis20.pdf...
+ACKNOWLEDGMENTS
+
+I would like to deeply thank my adviser Dr. G. Philip Robertson for his advice and
+guidance through this dissertation. I am grateful to his patience and encouragement. He changed
+my thinking pattern towards science. I would also like to thank my committee members, Dr.
+Stephen K. Hamilton, Dr. Alexandra N. Kravchenko and Dr. Alvin J.M. Smucker for many
+helpful suggestions and insightful comments with many stages of this process.
+I am grateful to Kevin Kahmark, Stacey VanderWulp, Cathy McMinn, Poonam Jasrotia,
+and Sven Bohm for their help with experimental design, field sampling and laboratory analyses. I
+would like to thank Emma Robertson, Michael Barrows and many technicians for the assistance
+in the field sampling. I thank Joe Simmons for agronomic management assistance. I thank Jane
+Schuette and Colin Kremer for help with figure preparation. I would also like to thank my other
+laboratory colleagues: Mike Abraha, Ajay Bhardwaj, Julie Doll, Ilya Gelfand, Neville Millar,
+Sarah Roley, Suzanne Sippel and Christine Sprunger for their invaluable suggestions and
+comments. I would especially thank Kevin Kahmark and his family, John Hoben and Tomomi
+Suwa for their caring and friendship.
+Research was funded by the US DOE Ofﬁce of Science (DE-FCO2-07ER64494) and
+Ofﬁce of Energy Efﬁciency and Renewable Energy (DE-ACO5-76RL01830), the US National
+Science Foundation LTER Program (DEB 1027253), and MSU AgBioResearch.
+
+v
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/sample_theses/thesis3.pdf...
+ACKNOW LEDGEMENTS
+My sincerest appreciation goes to Dr. Thalia Goldstein for her interest in this
+topic, assistance, guidance and helping build my confidence as a researcher. I also would
+like to thank my project consultant, Dr. Velayo, for his expertise and continued support
+throughout the entire doctoral project process.
+Many thanks go to my Mom and Bryan for seeing me through so much. And, as
+with all, my deepest gratitude goes to Joe Grana.
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/sample_theses/thesis4.pdf...
+ACKNOWLEDGMENTS
+First, I would like to thank my advisor, Dr. Michael Autieri, for his open-door policy and
+constant commitment to push me to strive for goals that at first seemed unreachable but
+have now become a reality.
+To my dissertation advisory committee: Dr. Steven Houser, Dr. Rosario Scalia, Dr. Victor
+Rizzo, and Dr. Dianne Soprano for their guidance and suggestions, but most importantly
+for their constant support throughout my graduate studies.
+I would like to specifically extend a special thanks to Dr. Dianne Soprano. First, for being
+the most outstanding Dean of the MD/PhD program that anyone could ask for, and
+secondly, for her understanding, help, and support during a very difficult time in my
+personal life.
+To my current and past fellow lab members, Sheri Kelemen, Khatuna Gabunia, Ross
+England, Alex Miecyjak, James Richards, Laura Sommerville, and Tony Cuneo, both for
+their scientific support and for keeping the lab an enjoyable work environment.
+To my parents and grandparents. For setting their expectations high and never settling for
+anything less. Without your constant love and support over the past three decades, I
+certainly would not be here today.
+Lastly, and most importantly, to Rachel Klitzman. No words here can express my love and
+gratitude for the time we had together. Without your unwavering patience and willingness
+to give up everything in North Carolina to follow me in pursuit of my ultimate dream to
+become a doctor, I would never have embarked on this extraordinary journey. Thank you
+for everything.
+v
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/sample_theses/thesis5.pdf...
+ACKNOWLEDGEMENTS
+I would like to thank my committee chair, Dr. Dorian, and my committee
+members, Dr. Leung, Dr. Eulert and Dr. Green, for their guidance and support throughout
+the course of this research. Special thanks for Dr. Kawahara, your mentorship and
+knowledge has been invaluable to the dissertation process.
+Thanks also go to the many people who supported this large undertaking,
+including but not limited to Dr. Wedding, Dr. Streets, Debra Miller, and Joanna
+Kwiatkowski. I also want to extend my gratitude to the internationals who were willing to
+participate in the study by sharing their experiences with openness and for extending their
+trust in me. A thank you to the international community for allowing me to contribute to
+knowledge of its members and for the abundance of experiences it has afforded me
+professionally and personally.
+Finally, thanks to my husband for his patience and love.
+
+INTERNATIONAL IDENTITY DEVELOPMENT
+
+i
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/sample_theses/thesis6.pdf...
+ACKNOWLEDGEMENTS
+
+I would like to thank my family and friends for their support during these
+past few years of research. I want to especially thank my husband Casey for
+giving me endless support and enduring all of the strains of graduate school first
+hand. I want to thank my mother Lise for interesting me in science at young age
+and for sharing all her wisdom about scientific research and the trials of
+completing a PhD. I also want to thank my father Stan and brother Nate for their
+continued support.
+I could not have completed any of this work without the excellent
+mentorship of Dr. Steven Houser, the best boss anyone could hope to work for.
+Dr. Houser and all members of his laboratory were invaluable towards
+completing this research. My fellow graduate student, Catherine Makarewich,
+provided friendly support as well as help with molecular biology and myocyte
+physiology experiments. Dr. Hajime Kubo provided scientific expertise and input
+across all aspects of this project, and none of this project could have been
+accomplished without help from him or from our lab manager, Mr. Remus
+Berretta. Also, I want to give a special thanks to Thomas Sharp for help with
+stem cell isolation and culture, and to Timothy Starosta, Yumi Chiba, and
+Sharmeen Husain for all their help with histology.
+This project would have been impossible without the help of our invaluable
+collaborator, Dr. Piero Anversa, a world expert in the field of cardiac repair who
+shocked the field years ago with his “wild” idea that the heart actually had the
+iv
+
+capacity to regenerate. After 15 years, my work and the work of many others
+has continued to validate what he has been saying all along. Thank you to the
+members of his team at Brigham and Women’s hospital including Dr. Marcello
+Rota, who taught me all the techniques involved in a mouse model of myocardial
+infarction and stem cell transplant, Dr. Annarosa Leri for continued assistance
+with stem cell characterization, Dr. Toru Hosoda for help with stem cell isolation,
+and Dr. Jan Kajstura (who is, in my opinion, the best histologist in the world).
+I would also like to thank my collaborators at Temple, Dr. Madesh
+Muniswamy and his student Nicholas Hoffman, Dr. Mike Autieri, his student Ross
+England and his lab manager Sheri Kelemen, and the members of Fox Chase
+Cancer Center’s Biostatistics and Bioinformatics Core; Dr. Eric Ross and Dr.
+Fang Zhu, who helped me develop statistical models for all of my experiments. I
+would like to thank Liz Opalka and Lewis Holt-Bright, members of Temple’s
+University Lab Animal Research Facility who helped care for my research
+animals during the course of my experiments. I also must thank my committee
+members for their continued help and guidance: Dr. Emily Tsai and Dr. Rosario
+Scalia in addition to Drs. Rota and Autieri who have already been mentioned.
+Finally I must thank Dr. Dianne Soprano and Tracey Hinton who run Temple’s
+MD/PhD program. Dr. Soprano gave me an incredible opportunity to join the
+program here at Temple, and I will be forever thankful to her for allowing me to
+fulfill my dream of becoming a physician scientist.
+
+v
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/sample_theses/thesis7.pdf...
+Acknowledgements
+Many people have been involved in the research, development, and final product
+of my dissertation. I would like to thank Dr. Balice for our weekly sessions. Those
+coffee breaks helped me better understand the meaning behind my work. The endless
+hours we spent working on statistics was rewarding. I would also like to thank Dr.
+Harris, for taking an important, supporting role in my work. Your inquisitive nature has
+helped me further investigate other facets of my work.
+Most of all, I would like to thank my loving parents and husband. Mom and Dad,
+I could not have asked for more giving and encouraging parents. Since I was a child, it
+has been your dream for me to be a doctor. I hope to always make you proud. Thank
+you for your undying loyalty. My husband Jon, since you have been with me, you have
+been with my dissertation. Your abundant jokes and silly humor have lightened the load
+on me during troubling times. I am enthusiastic to see the next chapters in our life
+together. And to my dog Baxter, thank you for cuddling me when times got rough.
+
+v
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/sample_theses/thesis8.pdf...
+Acknowledgements
+First and foremost, I would like to extend my heartfelt gratitude to my dissertation
+chair Dr. Alison Cerezo, whose immense passion for social justice, issues within the
+LGBT communities, guidance, and belief in me as a clinician and researcher have been
+instrumental to my overall professional growth. She has been there to support me every
+step of the way throughout this journey, especially in times of great difficulty. Without
+Dr. Cerezo’s mentoring, this project would not have come into fruition, and for this I am
+forever thankful.
+I have also been so very fortunate to have worked with Dr. Patrícia Zuríta Oña,
+whose passion for and expertise in ACT helped shape the workshop protocol. She has
+been an inspiration to me as a budding clinician and has believed in my aptitude for
+conducting this therapy from the inception of this project. I am also thankful for the
+opportunity to have worked with Dr. Fred Heide, and am grateful for his continuous
+positive support, his sharing of wisdom, and for helping me foster my researching skills.
+All in all, I have been so very fortunate to have worked with not only such talented
+clinicians and researchers, but also beautiful people.
+A most sincere thanks also extends to my statistical consultant Dr. Bruce Cooper
+to whom I am indebted for all his assistance with the accuracy of the statistical analyses
+for my study. I would also like to thank the authors of the Male Body Attitudes Scale,
+the Eating Attitudes Test-26, the Acceptance and Action Questionnaire-II, the Body
+Image-Acceptance and Action Questionnaire, and the White Bear Suppression Inventory,
+for making your measures publicly available for scientific use.
+
+v
+
+ACT—BODY IMAGE AND MALADAPTIVE EATING IN GAY MEN
+Next, I would like to thank my family and dear friends who have been
+painstakingly patient with me, yet never left my side as I have spent years devoted to this
+work. Last, but certainly not least, I would like to thank all of the participants who
+devoted one full day with me to complete the workshop. This study, the results, and the
+contribution to the field wouldn’t exist without you and your willingness to be a part of
+my research.
+
+vi
+
+ACT—BODY IMAGE AND MALADAPTIVE EATING IN GAY MEN
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/sample_theses/thesis9.pdf...
+Acknowledgements
+I would like to convey my tremendous sense of gratitude to Dr. Loren Hill, Dr.
+Dean Rishel, and Dr. Judy Matthews for the support and guidance that they have
+provided throughout the course of this project.
+Further, I wish to thank my wife, Dr. Debra Warner. Her belief in me has taught
+me to believe in myself. Her love and support have empowered me to turn my dreams
+into reality. Finally, I would like to thank my children. Without even knowing it, they
+have provided me with the inspiration to pursue my education.
+
+iv
+
+
