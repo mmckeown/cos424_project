@@ -6,7 +6,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 if [[ $# != 1 ]]
 then
     echo "Usage: $0 <input dataset>"
-    exit
+    exit 1
 fi
 
 INDATA=$1
@@ -15,7 +15,7 @@ INDATA=$1
 if [ ! -d ${DIR}/${INDATA}_theses/ ]
 then
     echo "No such input dataset '${INDATA}'"
-    exit
+    exit 1
 fi
 
 # All sample theses
@@ -40,10 +40,13 @@ RET_CODE=$?
 if [ $RET_CODE == 0 ]
 then
     echo "****PASS*****"
+    exit 0
 elif [ $RET_CODE == 1 ]
 then
     diff ${DIR}/${INDATA}.out ${DIR}/${INDATA}_theses/passing_output.out
     echo "****FAIL****"
+    exit 1
 else
     echo "Error occured in checking results"
+    exit 1
 fi
