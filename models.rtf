@@ -1,0 +1,36 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 Ideas:\
+\
+1st approach - crude mix of sentiment analysis with bag of word: \
+\
+1 - Use this list from psychology with positive words to count the number of positive words in each document \
+2 - Calculate the ratio positive words divided by the total number of words \
+3 - Rank universities based on that \
+4 - Also simply rank universities based on the average size of their acknowledgement session (average number of words)\
+5 - Look at this rank for other groups too - like humanities vs science, West vs East Coast etc\
+\
+(justification for bag of word - acknowledgment sessions are short and more straight forward less like to contain metaphors etc)\
+\
+2nd idea - to have a more principled way to decide about features\
+\
+1 - Do cluster analysis - k-means unsupervised learning - using our features of interest \
+# of words, university, # of positive words, # of negative words, subject, location etc\
+\
+3rth idea - classification\
+\
+1 - The classes would be the university type, or the field\
+2 - use the features of interests - positive words divided by the total number of words, length - and look at the posterior => proba of being that university given a certain ratio \
+\
+4th idea - \
+try these algorithms to do the classification\
+http://blog.mashape.com/post/48757031167/list-of-20-sentiment-analysis-apis\
+\
+\
+\
+\
+}
