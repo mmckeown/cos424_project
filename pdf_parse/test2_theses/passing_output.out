@@ -1,0 +1,911 @@
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/test2_theses/thesis1.pdf...
+ACKNOWLEDGEMENTS
+
+I would first like to thank my advisor, Sarah Tolbert, without whom I
+wouldn’t be here today. She always supported me in my most ambitious research
+schemes, and I am grateful for the opportunity she gave me to dream big.
+I would like to acknowledge my committee members, Professors Richard
+Kaner and Bruce Dunn, for their support, especially in the final stretch, and
+Professor Paul Weiss for serving on my qualifying committee.
+Thank you to my collaborators, especially those who helped in the design and
+construction of the plasma instrument in Chapter 2. I received invaluable advice on
+plasmas and RF electronics from Professor Francis Chen, Dr. Nathan Marchack, Dr.
+Joseph Nemanick, and most especially Dr. Winston Ciridon at the University of
+Washington in Seattle, who hosted me for a tour of his plasma instruments in the
+lab of Professor Buddy Ratner, and lent me the matching network I used for all of
+my depositions. Under the direction of Professor Bruce Dunn, Dr. Daniel Membrano
+worked with me on all the impedance data collection in Chapter 3.
+
+Dr. Laura
+
+Schelhas spent many weekends and early mornings gathering XPS for each film
+studied for impedance in chapter 3, as well as for countless more coatings analyzed
+in the optimization of the plasma instrument and in the following optimization of the
+PEO-like films.
+I would like to thank Dr. Benjamin Hahn for being my mentor and
+collaborator on a variety of iron oxide projects, including the work in Chapter 4,
+while I was on internship at the Naval Research Labs. He went above and beyond
+even to the extent of sharing his bench top, which my samples at times
+
+xx
+
+overwhelmed. Often times. Sorry Ben! I am eternally grateful to my internship
+advisor Dr. Debra Rolison, for welcoming me into her lab group.
+
+I thoroughly
+
+enjoyed my summer in your lab group, the opportunity to have you as a mentor,
+and the many conversations I had with you and all your group members both in lab
+and over coffee breaks or lunches.
+I am and will always be grateful to Dr. Carolyn Knobler for always believing
+in me.
+
+Without her mentorship and words of wisdom, the struggle may have
+
+overwhelmed me. Thank you for all your time and kind words. You were the key
+reason I regained hope and re-committed to this degree on at least 2 occasions.
+The last time we spoke, you saw a strength and passion in me that I did not think I
+possessed anymore. Thank you for giving that strength back to me.
+I have had the incredible good fortune to be joined in the doctoral trenches
+with some of the most amazing minds, and the best friends I could ever ask for.
+Dr. Christina Baker, my Apple Pan recruiter, whose office was my second oncampus home during my first year, and whose house has been my second home
+throughout graduate school.
+
+My first office-roommate and fellow salty oatmeal
+
+aficionado, Selma, for all the front lawn lunch breaks and pep talks that got me
+through the first two years. Beware: some birthday you’ll come home again to find
+Iris and me in your living room.
+
+Thanks to Dr. Rachel Harper, my good friend,
+
+critic, therapist, neighbor, and Erin-wrangler. I can still hear you some nights at 4
+AM, saying, “So, imagine an L, with one side shorter than the other. . .” No matter
+what you were going through, or how many days you’d gone without sleep, you
+always had time to keep the rest of us from imploding. To Dr. Iris Rauda, my dear
+friend and chair space competitor with whom I shared an office for 4 years that did
+
+xxi
+
+not actually have room for the both of us.
+
+We became close in only a way that
+
+people who sit an inch apart can be. We made it through the tough middle years of
+grad school together and saw each other through the final stage. I don’t know how
+I would have made it to the end without you.
+I am so appreciative, lucky, and thankful to have Thom by my side, who
+intuitively knows exactly what I need to feel grounded. You view every one of my
+challenges as a team effort, and kept finding ways to take more and more off my
+shoulders as the thesis piled more and more on.
+
+I also have to thank you for
+
+seeing the person behind the insanity while I’ve been finishing. I love you. And
+thank you to the Buckwalters, who lent me their living room to haunt all hours of
+day and night while writing this thesis.
+Lastly, I would like to thank my parents and siblings, who have always
+supported me in all of my endeavors. My father, who taught me the importance of
+a good handshake, and who gave me my first early lessons in electronics and
+hardware. My mother who always thought we could do anything, especiallyy after
+someone else told us that we couldn’t. And whose question of “Are you done yet?”
+I can finally answer.
+
+The work in this dissertation was supported by:
+
+The Materials Creation
+
+Training Program (MCTP) IGERT Fellowship, the California NanoSystem Institute
+(CNSI); the National Science Foundation (NSF); the Office of Naval Research
+(ONR); Darpa; Naval Research Labs (NRL); and the UCLA Graduate Division.
+
+xxii
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/test2_theses/thesis10.pdf...
+ACKNOWLEDGMENTS
+There are a countless number of people I can credit who have influenced my
+professional and personal life over the years. First, I want to thank my mom and dad for
+nurturing my curiosity and love of science and agriculture since I was a child. I also thank
+my brother Jim and my best friend Joe Pavich; you guys have been there for me since we
+were kids, and I can’t think of any better partners in crime.
+At Purdue, it should go without saying that sincere thanks goes to Dr. Herb Ohm.
+You fostered my interest in plant breeding, which would lay the foundation for making many
+other great professional relationships.
+Here in North Carolina, greatest thanks go to my advisor, Dr. Jim Holland. Your
+knowledge and patience over the last five years made graduate school into a far less painful
+experience than what I had anticipated. Thanks also go to my other doctoral committee
+members, Drs. Gary Payne, Peter Balint-Kurti, and Ross Whetten. Many, many members of
+the Holland Lab have contributed help or insight to this dissertation over the last two and a
+half years, including, but not limited to: Drs. Shilpa Sood, Funda Ogut, Bode Olukolu, and
+Jason Cook; technicians Jason Brewer and Josie Bloom; temporary employees Steve
+Pigozzo, Brittany Scott, Colt Jackson, Carlos Vega, and Sarah Davidson-Dyer; and graduate
+students David Horne, Kristen Kump, Yang Bian, and Shang Xue. Visiting doctoral student
+Fernando Samayoa from the CSIC (Spain) made possible a great collaboration in this
+dissertation.
+I also want to thank the many fellow graduate students both past and present that have
+been great friends to me while here at NCSU. Among them: Jill Recker, Oliver Ott, Dave
+
+iv
+
+Eickholt, Stine Petersen, Justin Ma, Emma Flemmig, and Dr. Jose Santa Cruz. Above all
+else, I want to single out Dr. Jake Delheimer. Hanging out with you on the weekends made
+the rest of the week bearable.
+Last, but greatest of all, I want to thank my beautiful, intelligent, and sometimes
+unbearably witty/sarcastic wife Katie. Your support for the last ten years is beyond words,
+and I can’t wait to start the next chapter of our life together.
+
+v
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/test2_theses/thesis11.pdf...
+ACKNOWLEDGEMENT
+Graduate school is a marathon, well maybe more of a sprint marathon.
+Throughout this race I have received constant support from a variety of sources that have
+ultimately helped me to complete this race, and I would like to take this moment to thank
+everyone who helped me along the way. First of all, I would like to thank my committee
+for unparalleled academic support. My advisor, Professor Jackie Barton, has provided a
+great lab environment to work in, given me many challenges that have helped me grow as
+a scientist, and supported me in my many endeavors. She has taught me the importance
+of obtaining a good work-life balance. My committee chair, Professor Harry Gray, has
+always provided great discussion and was always willing to lend an ear. Professor Sarah
+Reisman has always been a source of enthusiasm, encouragement, and provided an
+important outside perspective to my scientific problems throughout graduate school.
+Finally, I would like to thank Professor Judy Campbell for not only engaging in
+extremely helpful discussions about yeast and yeast proteins, but also for opening up her
+lab to help us with our projects. I’d also like to thank our collaborators Professor John
+Tainer and Justin Ishida, and, in particular, Dr. Jill Fuss, whose expertise in not only
+protein biology, but also DNA repair has been invaluable to me. I would like to thank
+her for always being available to discuss problems and providing a constant supply of
+protein. I’d also like to thank my undergraduate advisor Scott Silverman as well as Dana
+Baum for their constant encouragement and initial research training.
+During a race, I would find it impossible to make it through without aid. I’d like
+to thank the many members of the support staff here at Caltech, who go above and
+beyond their jobs to make graduate school much easier. Throughout my time here,
+
+iv
+Agnes Tong has been a constant source of humor and encouragement. Her love of
+Disney and travel is enthusiastic, and I will miss dropping by her office to catch up and
+have a quick cup of coffee. Steve, Leah, and Elisa have made sure that I always have
+what I need. Joe, Ron, and Memo have been invaluable when the bunker is a mess,
+letting me drive the cart, and always being friendly. Silva is amazing for her vast
+computer knowledge and is always upbeat and cheerful. I’d like to finally thank
+Maureen Renta for always having a good pot of coffee, a good story, and always being
+supportive for whatever problems I had. She has been another constant source of support
+throughout this race, and I can’t thank her enough for everything that she has done.
+Before even deciding to run a race you need inspiration. My family has provided
+endless support and has pushed me to always do my best. From an early age my
+grandparents have always encouraged me to pursue the sciences. My parents, Roth and
+Jenny, have always helped me pursue my interests even if they were a little out there.
+They have always stood by my side and provided unconditional love and support. My
+brother, Michael, is a constant source of inspiration as he pursues what he is passionate
+about and constantly challenges me to be better. My Aunt Ruth and Uncle Bob have had
+to mediate endless battles between my brother and myself, so it is thanks to them that I
+survived long enough to get to grad school. I’d also like to thank my Aunt Kathy and
+Uncle John for always encouraging me to do after-school activities and providing the
+three most wonderful cousins in the world, and also my Uncle George and Aunt Jan for
+always making sure that I’m in tip-top dental shape! I’d also like to thank my aunts and
+uncles on my mother’s side who have always encouraged me to do well in school.
+
+v
+Together, my family has been there for me to not only get me into the race, but also to
+watch me finish it.
+In the early part of a race, it is important to not burn out. I’d like to thank my
+fellow brothers in Alpha Chi Sigma for their continued support. In particular, those who
+always got to play the bonus or just wanted to drive down to Matt’s: Valerie, Jeanne,
+Nick, James, Colin, Status, Nick, Kevin, and Kurt. In particular, I’d like to thank my
+running buddies Joe and Matt for being willing to travel to random places to run a race
+and maybe stay at a hotel that’s a little far from the start line. I’d also like to thank Jason
+and Julia for their constant support. Ever since undergrad, we’ve gone on so many
+adventures and they have always been there for me. My good friend Jason has always
+been up for a productive conversation ranging from spreads, to straddles, to favorites, to
+where the euro is going, those topics always kept life interesting over those Fuji lunches.
+Finally, I thank John and April for always making sure we see each other during winter
+breaks even though they root for Michigan now. These friends have always kept me
+going and I’ve always enjoyed all the great memories that we have shared.
+The middle of the race can be boring and it’s important to be able to get through
+this rough patch. I’ve had the opportunity to work with some of the most amazing people
+over the years. I’d like to thank Barton group members past and present for always
+having wonderful discussions and being part of one of the most interesting D-league
+softball teams out there. I’d especially like to acknowledge the North Side both past and
+present for putting up with all of my lousy music choices. Also I’d like to thank the
+lunch crew for always being there; Anna for always being there to talk about mini things
+
+vi
+and travel plans, and Katie for always being there when I needed to talk. Finally, to
+Alyson, Alex, and Phil for many tasty dinners, Broad breakfasts and terrible movies.
+The last few miles can be the most miserable without proper training and help.
+These folks helped me throughout the race, but in particular helped me with that last
+mile. I’d like to thank Alexis and Andrew for being rational and always being willing to
+lend an ear and for always bringing back coffee! I’d also like to thank my friend
+Elizabeth for always being a phone call away to help me get through those rough times.
+DJ Pam has always been a source of humor, encouragement, and a great joke! I’ll always
+remember our crazy adventures and wonderful memories. This goes without saying, but
+Kaycie has been the most incredible friend ever, and I’d like to thank for her always
+listening to my crazy issues over Go China and for preventing me from making the
+biggest mistake of my life. Finally, I’d like to thank my favorite co-worker, Ariel,
+without whom I don’t think I could’ve made it through the last kick; she bakes the best
+pumpkin pies and always makes me smile.
+
+vi
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/test2_theses/thesis12.pdf...
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/test2_theses/thesis13.pdf...
+Acknowledgements
+I expected a rich scientific experience at Caltech, but never imagined how
+personally fulfilling my time here would be. For that I have a great number of people to
+thank. First and foremost, I want to extend heartfelt thanks to my graduate advisor
+Dennis Dougherty. I appreciate the extensive freedom he gives his students and yet the
+compassion and personal dedication he devotes to each one of us. Dennis is a supremely
+talented communicator, and I especially value the lessons I've learned about speaking,
+writing, and teaching from him. I also appreciate the support he has given me and the
+confidence he has instilled in me to tackle hard scientific problems and to explore a new
+field after Caltech.
+Henry Lester, a longtime collaborator of the Dougherty group, is an inexhaustible
+source of suggestions for new experiments and novel approaches to scientific problems. I
+value his scientific rigor and his dedication to his students. I also want to thank the
+members of my thesis committee, Peter Dervan, Doug Rees, and David Tirrell for their
+support and suggestions, both with regards to my graduate research and my career.
+The Dougherty group has been a fantastic place to work (and a fantastic place at
+times to hang out and not work too). I really look forward to keeping in touch with
+everyone I overlapped with in the group. When I first arrived in lab, Ariele Hanek, Kiowa
+Bower, and Kristin Gleitsman had saintly patience while I was learning the ropes, passed
+on endless sage advice, and made me feel welcome. I’m very glad I got to know Jai
+Shanata, who always brought a valuable quantitative rigor to scientific discussions and
+whose worldview is refreshingly optimistic. Sean Kedrowski answered so, so, many of
+my chemistry questions and put up with all assortment of canned fish and other exciting
+
+	  
+
+v	  
+
+lunch items that I brought in. I really enjoyed sitting next to him for three years. Angela
+Blum and Nyssa Puskar, with whom I overlapped for a good deal of grad school, have
+great integrity and are supremely capable researchers. Kay Limapichat helped me
+immensely to get started on fluorescence experiments and was generous with time and
+with materials she worked long to prepare. Noah Duffy is a hell of a human being. He
+always has an open mind, really thinks things through, and can fix absolutely anything.
+Kristina Daeffler, Ximena da Silva, Maggie Thompson, and I all entered Caltech
+together and had the wisdom to join the Dougherty group. Maggie has remained a good
+friend and I deeply admire her bravery to teach middle school science. Ximena (da Silva
+Tavares Bongoll de Rossi) has the longest name of anyone I know. Kristina and I both
+cut our teeth on GPCR projects and have commiserated on more than one topic on more
+than one occasion.
+Tim Miles knows how to chart his own path and excel at it. I’ve appreciated his
+friendship and look forward to watching what he does in the future. We were ever so
+fortunate to land Michael Post in the group. He’s carrying the nicotinic receptor torch
+forward and smiles seem to erupt everywhere he goes. Oliver Shafaat and Fan Liu have
+orders of magnitude more mathematical competence than I do. I really enjoyed my
+GPCR collaborations with Fan and all of our conversations. The future involves photons
+for Kayla Busby, Matt (Jefferson) Davis, and Paul (David?) Walton. These folks are
+breaking new ground, which made my last year in the group a lot more intellectually
+stimulating. They made it a whole lot more fun too. Betty Wong is bravely taking on
+some fluorescence work, and is more than up to the task. She hasn’t been in the group
+long, but everybody agrees she’s a force for good.
+
+	  
+
+vi	  
+Finally, Matt Rienzo and Clint Regan were my companions in the south bay of
+
+desks for the last few years and I’ll deeply miss them. Clint is steering the
+photochemistry ship – making good progress and knowing the right questions to ask.
+Matt can do very hard chemistry and very hard biology and is a very good person as well.
+I had the privilege of working with three truly outstanding undergraduates in lab
+during my graduate career: Jessica Swallow, Emily Blythe, and Jessica Hsu. All learned
+the ropes in lab effortlessly and accomplished much, were great to work with, and were
+often many steps ahead of me.
+Friends in the Los Angeles area showed me that this is an awesome place to live
+and is going to be an especially hard place to leave. Michael Van Vliet has been a
+fantastic friend and a much needed beacon of normalcy beyond the Caltech community.
+All of my cycling friends gave me a window into this city I would never have seen
+otherwise and are all fantastic people. My roommates Alex Goldberg, James McKone,
+and Judy Lattimer have been great friends and deserve a medal for putting up with my
+eccentricities.
+Finally, I want to thank my family, who I don't thank nearly enough. My parents
+have always supported me unconditionally and serve as the strongest role models I could
+ever ask for.
+
+	  
+
+vii	  
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/test2_theses/thesis14.pdf...
+ACKNOWLEDGMENTS
+As my long and meandering journey at UCLA approaches completion, I reminisce
+about my time at this fine university, and realize that I encountered so many special
+people who have enriched my personal and academic life. For this, I am forever grateful.
+I am indebted to my advisor and mentor, Professor William W-G. Yeh, who has
+guided me throughout this project, strengthened my research skills and introduced me to
+the fascinating world of water systems optimization. He taught me how to ask and to
+answer questions adequately and was very patient for results to appear. Due to his
+wisdom, generosity, creativity, elegance and unparalleled kindness, my overall technical
+and life skills have been enhanced.
+I would like to thank the other members of my doctoral committee, Sami W. Asmar,
+Professors Steven A. Margulis, Diego Rosso and Michael K. Stenstrom for their presence,
+pedagogy, valuable insight and support. I am grateful to Professor Margulis who
+provided me with a teaching assistantship at the early stages of my graduate studies and
+strengthened my understanding of hydrology and hydrometeorology. Special thanks to
+Sami W. Asmar for our friendship and collaboration on several projects over the last
+decade. His generosity and passion for science has allowed me to broaden my horizons,
+enabling me to work with his group at the Jet Propulsion Laboratory, Pasadena. In
+addition, because of his creativity and support of the arts, I was given the opportunity to
+participate in his music group and to share poetry at different venues in Southern
+California. I also extend my gratitude to Professor Diego Rosso. Our friendship and
+
+xi
+
+academic collaboration has developed ever-since we started working on this research,
+under Professor Yeh’s supervision. Professor Rosso’s creativity and diverse research
+interests made complex topics approachable.
+I would also like to extend my appreciation to all the other professors I had at UCLA–
+Professors Terri S. Hogue, Jennifer A. Jay, Donald R. Kendall, Keith D. Stolzenbach and
+Ne-Zheng Sun, for enriching my engineering knowledge and teaching me wonderful
+lessons about water and the environment.
+I wish to acknowledge all current and former staff at the Civil and Environmental
+Engineering Department–especially, Maida Bassili, who kept reminding me that tenacity
+and perseverance will ultimately pay off. I am also thankful for my co-workers and office
+mates, both within and outside the university, for all that was learned and shared–
+particularly with Scott Boyce and Wei-Chen Cheng at UCLA, and Julio C. Herrera at MI
+Design, Inc.. My appreciation also goes to current and former Civil and Environmental
+Engineering students and visiting scholars at UCLA–Yu-Wen Chen, Barton Forman,
+Manuela Girotto, Ieda Hidalgo, Keith Musselman, Mahdi Navari, Adam J. Siade,
+Zachary P. Stanko, Tim Ushijima, Che-Chuan Wu, Bin Xu and Renato Zambon.
+This research could not have been possible without the relentless encouragement and
+support from the following individuals and institutions: Professor Young C. Kim of
+CSULA who introduced me to coastal engineering, expanded my understanding of fluid
+mechanics and opened many doors for me to pursue academic research, Professor
+Nazaret Dermendjian of CSUN who welcomed me more than three years ago as an
+
+xii
+
+educator and friend, and supported me enthusiastically and unconditionally in my
+pursuits. I am also grateful to Professor Donald G. Browne and the UCLA School of
+Engineering and Applied Science for providing me with a teaching assistantship via the
+engineering ethics program. I extend my gratitude to Robert L. Doneker of Mixzon, Inc.
+who provided me with access to the CORMIX model and offered valuable insight into
+the simulation and research processes. I wish to thank Professor Abbas Daneshvari, an art
+historian, philosopher and friend, who constantly reminded me to work diligently and
+pursue my endeavors. I also wish to thank Professor A.J. Racy of UCLA who generously
+welcomed me several years ago as participant at his musical ensemble which has
+enhanced my life, both musically and spiritually. His kind presence and wonderful
+musical compositions have been comforting forces throughout my UCLA journey.
+Special thanks to Antoine I. Harb for his friendship, support and encouragement, and for
+introducing me to Professor Racy’s musical ensemble. I also thank Professor Adnan
+Darwiche of UCLA for his positive encouragement and for gifting me with his scientific
+and artistic knowledge.
+My deep gratitude goes to my family. I thank my dear brother Omar and his family,
+and my sister Lamia and her family. I also thank my nephew Ghassan (Jason) who has
+always been a source of strength, intelligence and unconditional love. I give my deep
+appreciation to my youngest sister Genane who has shown a remarkable enthusiasm
+about this project and has always been a source of unwavering love and support. Last but
+not least, I thank my father Ghassan and my mother Leila for their moral support,
+boundless love and, above all, for teaching me many lessons in love and kindness.
+
+xiii
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/test2_theses/thesis15.pdf...
+ACKNOWLEDGMENTS 
+ 
+I  would  like  to  express  my  profound  gratitude  to  my  advisor  Dr.  Parviz  Soroushian  for  his 
+support, guidance and valuable advice throughout this study. His support and magnanimity will 
+inspire me throughout my life. 
+It is a great honor for me to have Dr. Burgueno, Dr. Drzal, and Dr. Kodur on my PhD committee. 
+Their interest and careful evaluation of my work are appreciated. 
+I  am  also  highly  grateful  to  Mrs.  Fran  Jamzadeh  who  motherly  supported  me  throughout  my 
+Ph.D.  studies.  I  also  want  to  thank  all  my  friends  and  colleagues  at  Michigan  State  University 
+and Technova Corporation for their kind assistance. 
+Most of all, I would like to express my deep appreciation and thanks to my mother (Shahrzad 
+Azimzadeh), lovely sister (Lobat Peyvandi) and my family specially grandfather (Reza Peyvandi) 
+and grandmother (Azra Famili) for their endless love, support and encouragement. Finally, my 
+words  stand  helpless  and  cannot  express  my  appreciation  to  my  beautiful  wife  (Nafiseh 
+Farhadi) for her patience and support. 
+ 
+ 
+ 
+ 
+ 
+
+v 
+ 
+
+ 
+
+ 
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/test2_theses/thesis16.pdf...
+Acknowledgements
+All that I have accomplished as a PhD student was made possible with the help and
+support of amazing people, both in my professional and personal life. I will always be beyond
+grateful to my advisor, Peter Girguis, for the faith he had in me from the very beginning, his
+continued patience and attention throughout my time in graduate school, and above all else, the
+fact that that he always treated me as a peer. The scope of skills I learned in the Girguis lab is
+beyond what I ever predicted I would as a graduate student: from wiring an outlet to identifying
+a pipe-fitting to writing a proposal. I am thankful for all that I have learned from Pete, and I
+know that I will only appreciate these things more as I move forward into other research. I also
+thank my committee, Andrew Knoll, Colleen Cavanaugh and Christopher Marx ; their questions
+were always balanced by encouragement and my dissertation is inestimably better because of
+their input and help.
+I must also express gratitude to the past and current members of the Girguis lab, as well
+as others in the department of Organismic and Evolutionary Biology. I have been so fortunate to
+be part of such a supportive and inspiring lab group; I now can’t imagine preparing a talk
+without their invaluable insight and direction. I must especially thank Jon Sanders, who has
+contributed, in both large and small ways, to every project I have worked on during my
+dissertation; I am lucky to have found both a friend and colleague in Jon. And of course there are
+my labmates, officemates, friends, and, at least in Kiana’s case, roommate, Kiana Frank and
+Heather Olins; as well as my friend and lab neighbor, Dipti Nayak. They always challenged and
+supported me, and made every day fun. I am grateful for their friendship, which I know will be
+life-long.
+Thank you to the many, many collaborators and coauthors that I have worked with as a
+graduate student. The list is long, but special thanks to Charles Fisher, Erin Becker, George
+!
+
+vi
+
+Luther, Amy Gartman, Nicole Dubilier, Spencer Nyholm, and Frank Stewart. Additionally, this
+work could have been done without the crew of the R/V Thomas G. Thompson and the ROV
+JASON II. I am also grateful to the staff of the Ernst Mayr Library of the Museum of
+Comparative Zoology at Harvard University for their acquisition of countless obscure articles
+and books for me. And in terms of logistical and moral support, I am particularly indebted to
+Jennifer Delaney and Stephanie Hillsgrove, who made lab logistical and administrative tasks
+immeasurably easier.
+I am so appreciative of the incredible friends and family that I have encouraging me
+behind the scenes. Thank you to my extended family June and Steve Jones, Dana Jones, Erin
+Cooper, Jordan Kunkes and Eve Boltax for their love and support. My old friends Kara
+Gaughen, Jessica Russell, Alicia Widge, Laurel Aquadro and Christine Sun brighten my life in so
+many ways and nobody makes me laugh as hard. My husband Andy Jones has been an
+inspiration; I admire him for his unending optimism and constant curiosity. I am so grateful for
+our partnership and could not have done this without him. Thank you to my sister Nina Kunkes,
+whose wit and focus I admire, and whose love and support has been unwavering.
+And finally, thank you to my parents, Daniel and Phyllis Beinart. My father always
+encouraged my scientific interests, whether he was teaching me binary code at the kitchen table
+or driving me to a before-school lab class in fourth grade. He gave me the skeptical, analytical
+mind that makes science fun. My mother is my greatest cheerleader, and never fails to make me
+feel like my work is important. She is why I strive to go as far as I can as a woman in this field,
+and make the path easier for those coming after me. I will always be grateful, for they are the
+reason I have made it this far.
+
+!
+
+vii
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/test2_theses/thesis17.pdf...
+AKNOWLEDGEMENTS
+The author would like to express his deep appreciation to Dr. Stephen O'Leary for
+his unlimited support, guidance, and endless hours of fruitful and extremely rewarding
+discussions throughout the years that led to the culmination of this work. His mentorship
+and knowledge has helped me finesse both my research and academic skills and will
+undoubtedly be a substantial contribution to my success in both my academic and
+research careers. I also extend my sincerest gratitude to my committee members Drs. R.
+Muscedere, A. Ahmadi, N. Zamani, and M. Mirhasani, for their valuable guidance and
+important suggestions. Their feedback has provided me with the motivation to find the
+right ideas to work on for my research. I would also like to thank Dr. R. Sobot for giving
+me the honor to be on my committee and examine my work.
+
+I would also like to thank Dr. Sid Ahmed, Head of the Electrical and Computer
+Engineering Department, for his encouragement and guidance during my graduate studies
+pursuit. Special thanks goes to Ms. Andria Ballo, the graduate secretary, for her genuine
+assistance and care throughout my years of graduate studies at the University of Windsor.
+
+I thank my brother Hussein for his care and support and our long phone conversations
+that have given me the strength when I needed it the most. I thank my parents Ali and
+
+viii
+
+Rafica for everything they have done for me, there are no words that can describe the
+gratitude and love I feel towards you guys, nothing would have been possible without
+you. Children take their parents for granted and this is one of those moments of truth
+where I deeply realize everything you have done for me and all the things you have
+taught me. It is because of all the sacrifices that you have made throughout those many
+years that my accomplishments are made possible.
+
+Last but not least I want to thank my wife Samar and daughters Leila and Angelina for
+their unparalleled support, patience, encouragement, and for their faith in my talent and
+ability to pursue my goals. I thank Samar for always being there for me in those moments
+where every graduate student feels lost in the midst of their research, she always
+managed to bring the sunshine to my grey skies. I thank Leila and Angelina for bringing
+a smile to my face and giving me the breeze of fresh air each time I took things too
+seriously.
+
+ix
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/test2_theses/thesis18.pdf...
+AKNOWLEDGEMENTS
+The author would like to express his deep appreciation to Dr. Stephen O'Leary for
+his unlimited support, guidance, and endless hours of fruitful and extremely rewarding
+discussions throughout the years that led to the culmination of this work. His mentorship
+and knowledge has helped me finesse both my research and academic skills and will
+undoubtedly be a substantial contribution to my success in both my academic and
+research careers. I also extend my sincerest gratitude to my committee members Drs. R.
+Muscedere, A. Ahmadi, N. Zamani, and M. Mirhasani, for their valuable guidance and
+important suggestions. Their feedback has provided me with the motivation to find the
+right ideas to work on for my research. I would also like to thank Dr. R. Sobot for giving
+me the honor to be on my committee and examine my work.
+
+I would also like to thank Dr. Sid Ahmed, Head of the Electrical and Computer
+Engineering Department, for his encouragement and guidance during my graduate studies
+pursuit. Special thanks goes to Ms. Andria Ballo, the graduate secretary, for her genuine
+assistance and care throughout my years of graduate studies at the University of Windsor.
+
+I thank my brother Hussein for his care and support and our long phone conversations
+that have given me the strength when I needed it the most. I thank my parents Ali and
+
+viii
+
+Rafica for everything they have done for me, there are no words that can describe the
+gratitude and love I feel towards you guys, nothing would have been possible without
+you. Children take their parents for granted and this is one of those moments of truth
+where I deeply realize everything you have done for me and all the things you have
+taught me. It is because of all the sacrifices that you have made throughout those many
+years that my accomplishments are made possible.
+
+Last but not least I want to thank my wife Samar and daughters Leila and Angelina for
+their unparalleled support, patience, encouragement, and for their faith in my talent and
+ability to pursue my goals. I thank Samar for always being there for me in those moments
+where every graduate student feels lost in the midst of their research, she always
+managed to bring the sunshine to my grey skies. I thank Leila and Angelina for bringing
+a smile to my face and giving me the breeze of fresh air each time I took things too
+seriously.
+
+ix
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/test2_theses/thesis19.pdf...
+ACKNOWLEDGEMENTS
+I would like to thank everyone involved in my graduate studies and making this
+research possible.
+
+1
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/test2_theses/thesis2.pdf...
+ACKNOWLEDGMENTS
+
+The old saying, “There is no “I” in team” applies just as much in graduate school
+as it does in sports. Although individual candidates do a large portion of their work
+independently, it is through the help, assistance, and support of others that brings the
+goal into sight. I’d like to take this opportunity to acknowledge and thank those
+who’ve helped me throughout my studies at Cornell.
+First, and above all, I’d like to express my deepest gratitude to my advisor,
+Christopher K. Ober. I am so very fortunate to have had the opportunity be a part of
+his group. His enthusiasm for my topic and tremendous expertise was very much
+appreciated. Even more, I’m so thankful for all of the support and encouragement he
+showed me over the years. I have never met a more patient, understanding person
+who is willing to sacrifice his time to mentor and assist his students. Thank you for
+your tutelage, advice, and guidance during my years at Cornell. Your friendship,
+although at first unexpected, has been the driving force of my success and for that I am
+forever grateful.
+I would also like to thank my exceptional committee members, Professor Barbara
+A. Baird and Professor Héctor D. Abruña for their significant research discussions and
+suggestions. Their expertise and patience to explain topics outside of my field of
+research has been invaluable. Without their collaboration and contributions, this thesis
+would be incomplete.
+I am grateful for having the opportunity to work with numerous research groups
+and gain a greater understanding and appreciate for their field of work. Prof. George
+Malliaras and has been very kind to invite me several times to his lab in Centre
+Microélectronique de Provence, France for collaboration on a sensor project. His
+discussions on transistors have been very beneficial. Additionally, Thomas Doublet
+
+vii
+
+was very helpful teaching me about glucose sensing and PEDOT:PSS electrodes and it
+was a pleasure to work with him.
+Although our project is relatively new, I have enjoyed working with Dr. Katherine
+Hajjar to explore the world of interfacing biological media and polymer brushes. Our
+research discussions provided direction with great potential in the future. Thanks to
+Dena Almeida and Arun Deora for their work testing our brush samples and for
+providing enzyme/cell related guidance and suggestions.
+For the biosensor work, my longest ongoing project, I would like to thank all of
+the past and present people who made contributions. Thank you to Norah Smith,
+Michele Tague, Youyong Xu, Hongjun Chen, Nicole L. Ritzert, Marcus Wilkes, and
+Devin Wakefield. Collaboratively we have made so much progress and it has been
+exciting working with each of you and seeing the development and advancement over
+time.
+Over the years group members have always been a source of help and support.
+Special thanks to Dr. Youyong Xu who taught me lab technique and who was an
+excellent role model and source of information during my first few years. I am so
+grateful for the help and support from all the Ober group members past and present.
+I appreciate your friendships and collaborations.
+I gratefully acknowledge the funding support from the National Science
+Foundation (NSF) in which much of this work was made possible. Also I would like
+to thank the technical support from the staff in the Cornell Nanobiotechnology Center
+(NBTC), the Cornell Nanofabrication Facility (CNF), Cornell Center for Materials
+Research (CCMR), and Cornell High Energy Synchrotron Source (CHESS). Special
+thanks to Rob Ilic who was instrumental in teaching me everything about lithography
+and device fabrication and John Grazul for his help with the TEM.
+Finally, I am so grateful to all of my friends and family. I have made friendships
+
+viii
+
+here at Cornell that I will cherish for a life time. Our fun times together got me
+through some very frustrating periods in the lab and I will treasure those memories the
+rest of my life. My family’s love and faith in me also provided the support I needed to
+succeed. I am so thankful for everything my parents provided for me and everything
+they did to get me to where I am today. Thank you for your love, assurance and
+encouragement.
+
+A heartfelt thanks to everyone, I have now joined the Ph.D.
+
+community.
+
+ix
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/test2_theses/thesis20.pdf...
+A ck n o w led g m en ts
+This journey would not have been possible without the support of many people over the
+past years.
+I would like to thank the members of the Biorobotics Lab, those who helped develop the
+robot and so many of the tools th at made it usable, those who weren’t afraid to tell me when
+my crazy ideas were not going to work, and those who kept the robot working so I always
+had a reliable platform. And of course, thanks go to Peggy Martin, without who the lab
+would certainly cease to function!
+I also owe thanks to the collaborators I have worked with and discussed ideas with
+outside of the lab, especially those at the Museum of Science and Industry for being so
+supportive during three days of data collection. I also appreciate the support of members of
+CMU’s Auton lab for graciously adopting me during conference preparation and for supplying
+computation resources.
+I am grateful for the support of my committee, especially for the advice and time given
+by my co-advisors, Howie Choset and Jeff Schneider.
+Finally, I thank my family for their love and support. My parents have encouraged and
+helped me through so many years of school and life - from the hours spent with me on my
+elementary school class papers and science fair projects to those teaching bigger life lessons.
+I now realize how they laid a solid foundation for all th at I do. This thanks is also especially
+deserved by my wife for her generosity in proofreading everything I wrote and her endless
+patience as she endured late nights in the lab, pre-deadline stresses, and uncertain future
+plans.
+
+II
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/test2_theses/thesis3.pdf...
+Acknowledgments
+The work presented herein could not have been done without the support of many people. First and foremost,
+I would like to recognize my advisor, Professor Sergio Pellegrino, whose vision, guidance, and behind-thescenes orchestration enabled me to reach this point. He never takes “it can’t be done” as a ﬁnality, and always
+pushes forward and higher. I would also like to recognize my thesis committee: Professor Guruswami “Ravi”
+Ravichandran, Professor Julia Greer, and Professor Dennis Kochmann. I make a special acknowledgement
+to Ravi, whose gentle encouragements from time to time were always welcome. I’d also like to thank the
+Keck Institute for Space Studies and the Jet Propulsion Laboratory for funding our eﬀorts and believing in
+our vision.
+Throughout my time here at Caltech I have had several mentors to whom I am eternally grateful for
+their advice and wisdom: Dr. James Breckinridge, for transforming an optically illiterate engineering student
+into a Ph.D. recipient who works on telescope design and active optics. His tireless dedication and the vast
+experience he voluntarily brings to our eﬀorts are quite commendable and admirable. Dr. Risaku Toda,
+for introducing me to the world of microfabrication, and patiently teaching me the various methods and
+machinery that allowed me to make these active mirrors. Mr. Victor White, who always had a “crazy idea”
+whenever I would get stuck, which turned out to be not so crazy more often than not. Dr. Harish Manohara
+and Dr. Andrew Shapiro, for establishing the collaboration between our lab and his, and working with my
+advisor to enable new areas of research.
+I have collaborated with many people during my time at Caltech on research, projects, and classes, and
+special acknowledgements go to Professor Chiara Daraio, Professor Abha Misra, Dr. Greg Davis, Dr. Yunjin
+Kim, Dr. Terry Gdoutos, Dr. Namiko Yamamoto, Dr. Marie Laslandes, and fellow mirror researcher John
+Steeves. The staﬀ here in GALCIT were also extremely helpful, especially Petros Arakelian, Joe Haggerty,
+Kathleen Jackson, Christine Ramirez, and, of course, Dimity Nelson, who keeps the place running.
+I would like to also generally acknowledge past and present members of my lab group and project team,
+whose hard work were always an inspiration for me and pushed me to always keep going: the staﬀ and
+researchers in the Microdevices Lab who were always so friendly and helpful, my fellow classmates who
+helped each other through the ﬁrst year, and the various Ae105 classes who put so much hard work into the
+design project in such a limited timeframe. I would like to thank my friends for their support, and last but
+most importantly, my family. All so scattered about, and yet always so close.
+
+iv
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/test2_theses/thesis4.pdf...
+ACKNOWLEDGEMENTS 
+ 
+ 
+ 
+I would like to thank my family for all of their support throughout my endeavors.  I would also 
+like to personally thank Dr. Bradley Marks, Dr. James Steffe, Dr. Ajit Srivastava, and especially 
+my  advisor,  Dr.  Christopher  Saffron.    This  was  a  wonderful  opportunity  and  I  couldn’t  be 
+happier that I was given a chance to become part of such an exceptional group of individuals.  
+An  immense  thanks  to  Dr.  David  Hodge  and  Dr.  James  Jackson,  of  my  committee,  who  have 
+been  crucial  to  my  limited  background  in  chemistry  and  have  also  served  as  a  catalyst  in  my 
+renewed interest.  Dr. Kurt Thelen provided intellectual support on the feedstock involved and 
+also  provided  raw  materials  needed  for  experiments,  without  either  this  research  would  be 
+lost.  I would like to thank my friends at the agronomy farm, Bill Widdicombe and Brian Graff, 
+for their help with biomass reconstitution, especially during the absence of time, this is greatly 
+appreciated.  Distinct gratitude is also felt toward Dr. Shantanu Kelkar for all of his vast insight 
+in  the  laboratory,  especially  with  the  GC/MS.    This  research  would  have  not  been  possible 
+without  the  help  from  my  partners  at  the  North‐Eastern  Sun  Grant  Initiative,  Michigan  State 
+University  AgBio  Research,  and  the  Great  Lakes  Bio‐Energy  Research  Center.    Thank  you,  Dr. 
+Zhenglong  Li,  Dr.  Somnath  Bhattacharjee,  Chai  Li,  Mahlet  Garedew,  Rachael  Sak,  Kristine 
+VanWinkle,  Nichole  Erickson,  and  Kristine  Henn  for  being  such  an  awesome  and  supportive 
+group to work with.  I hope that Barb Delong and Cheryl Feldkamp accept a special thank you 
+for always helping me get where I need to be.  And to all of my professors and friends, please 
+accept a towering thank you for permitting me to learn from you. 
+ 
+iv 
+ 
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/test2_theses/thesis5.pdf...
+Acknowledgments
+First and foremost, I would like to express my deepest gratitude to my
+advisor Professor Chunming Zhang, for her introduction to the amazing
+world of statistics, and her guidance and encouragement through the entire
+course of my research. Prof. Zhang has selflessly shared original research
+ideas with me and guided me patiently in every stage of my graduate
+study. Without her enlightening instruction, kindness and patience, I
+could not have completed my dissertation. Her dedication in statistical
+and scientific research motivated me to conduct original research in pursuit
+of knowledge and excellence not only in this dissertation but also in my
+future career. It has been my great honor and privilege to have had the
+opportunity to work closely and learn from her.
+I would also like to extend my sincere thanks to Professor Zhengjun
+Zhang, Professor Karl Rohe, Professor Yingqi Zhao and Professor WeiYin Loh, for their service in my thesis committee. Their careful reading
+of this dissertation and valuable suggestions and comments help me to
+improve the thesis. Special thanks go to Professor Zhengjun Zhang, for his
+
+ii
+insightful comments in the group meetings and unceasing encouragement
+during my time as a Ph.D. student.
+Besides, I am very grateful for the time I spent in the Department of
+Statistics at University of Wisconsin-Madison. My solid background is
+built from receiving rigid training here in both theories and applications
+of statistics, which are not only beneficial to my research but also priceless
+for my career. Thanks go to all the faculty members, staff and graduate
+students in the department.
+Finally I would like to thank my dear parents Xiaoming Chai and Taifen
+Zhang, for their years of support and understanding. Their selfless love
+supports me every day during my study. I dedicate this dissertation to
+them.
+
+iii
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/test2_theses/thesis6.pdf...
+Acknowledgements
+There are a number of people that I want to thank for their help, support, and guidance
+during the course of my graduate work as well as the writing process of this thesis. First of
+all I want to thank my graduate mentor and advisor Dr. Amotz Bar-Noy for his patience and
+guidance during this process. He taught me not only about research in computer science,
+but also about being a responsible and generous person.
+I acknowledge and thank all the present members of my Thesis Advisory and Defense
+Committee: Theodore Brown, Noson Yanofsky, and Stathis Zachos for their support and
+encouragement during the course of my work.
+I want to thank all of my coauthors including Thomas La Porta, Matthew P. Johnson,
+Lance Kaplan, Fangfei Chen, Yun Hou, and Kin Leung with whom I had a privilege of
+collaborating. Thanks for providing valuable feedback as well as technical and intellectual
+support during the course of my studies.
+Additionally, I want to thank all of my professors at The Graduate Center and at Queens
+College, especially Dr. Bojana Obrenic for her encouragement and intellectual support.
+I thank my family. Thank you Mom and Dad for everything that I am and for giving me
+the tools to build my life. You are always proud of me and believe that I can do anything
+that I put my mind to. Thanks to my brother Vadim with his wife Natalie and my brother
+Gavriel for their moral support.
+Finally, I thank my wife Anna for her moral and emotional support and for pushing me
+to finish my graduate work.
+
+v
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/test2_theses/thesis7.pdf...
+ACKNOWLEDGMENTS
+
+First, I want to express my most gratefulness to my advisor, Professor Jian Zhang, for her
+continuing support and guidance, as a supervisor in school and as a friend in life. The words
+from her “Wang, you are capable” is the best encouragement I had, am having and will have ever.
+I would like to extend my wholehearted appreciation to the members of my doctoral
+committee, Prof. Scott J. Brandenberg, Prof. Ertugrul Taciroglu, and Prof. Christopher S. Lynch,
+for their incomparable lessons and suggestions which not only provided me knowledge, but also
+delivered to me the attitude of an outstanding researcher.
+I also would like to express my most sincere thankfulness to Prof. Shirley Dyke from
+Purdue University and Prof. Bin Wu from Harbin Institute of Technology, China, for their great
+and precious support in providing me with experimental facilities and detailed academic
+guidance that guaranteed the success of the experiments essential for my research work.
+It’s greatly appreciated of the NSF projects that funded my research work through the
+Network for Earthquake Engineering Simulation Research Program: Development of Next
+Generation Adaptive Seismic Protection (NEESR-SG, CMMI-0830391) and Performance-Based
+Design and Real-time Large-scale Testing to Enable Implementation of Advanced Damping
+Systems (supplement to NEESR-SG, CMMI-1011534). China Scholarship Council (CSC) also
+supported my study in UCLA and I deliver my deepest appreciation here as well.
+My special thanks go to my friends, Shi-Po Lin and Ali I. Ozdagli. Without their
+accompany, I couldn’t imagine how harder my life would turn to be. The time I spent with them
+exchanging academic ideas as well as dreams for life, would become the most precious memory
+of my PhD study.
+
+xv
+
+Now I would like to thank all my research group members, fellow students and
+professionals, as well as department staff, especially Maida Bassili, who supported me with their
+constructive comments, pleasant teamwork, and heart-warming help regarding various aspects of
+my life at UCLA.
+My boundless acknowledgement is given to my little friends, Kim Wang, Devon Wang
+and my cute niece, Jiaxi Liu, for their being angel and cheering me up all the time. Whenever see
+their smile and hear their voice, I gain the strength and hope to overcome various challenges and
+difficulties in life.
+Last but not least, I want to offer my utmost gratitude to my father Fengchang, my mother
+Yifan and my sister Ning, for their endless and unconditional love and expectation, which is the
+origin of all my courage and happiness. I love you, my family, I am so lucky to have you guys by
+my side.
+
+xvi
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/test2_theses/thesis8.pdf...
+Acknowledgements
+First and foremost, I would like to acknowledge the contribution of my adviser, Dr E.M.
+Sparrow for his immense motivation, support, advice, and guidance in pursuit of my PhD
+degree. He has been a great teacher, adviser, and role model. Without his support, this
+work would not have been possible. I would like to thank the staff and faculty of the
+University of Minnesota who have provided the technical knowledge and resources for
+me to undertake this effort. I express my gratitude towards my committee members: Dr.
+Arthur Erdman, Dr. Rusen Yang, and Dr. Shuzhong Zhang for their valuable time and
+feedback. I would also be indebted to my many lab mates and colleagues with whom I
+have enjoyed working with and learnt a great deal from. Of particular mention are my
+work and personal interactions with Prof. John Abraham, Ryan Lovik, Dan
+Bettenhaussen, and John Gorman.
+I dedicate this thesis to my parents for their unflinching emotional and financial support
+in all my endeavors. I would like to specially thank my wife for her continuous belief and
+support through sometimes stressful times. Finally, I would like to thank all my friends,
+many of whom are like family members (especially Erie Street Rockers Group), for
+ensuring that my student life at the University of Minnesota was a fun and memorable
+experience.
+
+i
+
+
+Parsing acknowledgement section from /home/mmckeown/courses/cos424/cos424_project/pdf_parse/test2_theses/thesis9.pdf...
+ACKNOWLEDGMENTS
+It took me long to finish my Ph.D. thesis but to write this acknowledgement is as
+difficult, as I am indebted to so many people without whom I could’ve never made it this
+far. I would like to say thank you to every single one of you.
+I must first thank Dr. Oliver Hobert for being such an amazing mentor, who
+provided me the opportunity of working in his lab and the freedom to pursue projects of
+my interest, supported me with endless encouragement, inspired me with his scientific
+enthusiasm, creativity and optimism, and has always kept his office open for discussions
+and suggestions.
+I truly appreciate the tremendous help from past and current members of the
+Hobert lab. I must give thanks to Maggie O’Meara, who introduced me to worm genetics
+and went out of her way to lend a hand; to Sumeet Sarin, who never hesitated to share his
+strains and experience; and to Maria Doitsidou, Nuria Flames, and Richard Poole, who
+were never sick of answering my naïve questions and showed me what it takes to be a
+true scientist. I would like to give special thanks to Marie Gendrel, my French baymate,
+for exchanging ideas and sharing thoughts on everything, for organizing numerous
+amazing parties and outings, and for keeping life both in and out of the lab from getting
+tedious; to Inés Carrera, for always going above and beyond to help; and to Kelly Howell
+and Meital Oren for being good friends and for sharing the passion for shopping. I also
+thank Alex Boyanov for administrative support and Chi Chen for expert injection
+assistance. I was fortunate to have known you all.
+I’m grateful to all collaborators involved in my projects over the years. Eileen
+Flowers retrieved the lsy-27 allele, which I later worked on; Henry Biglow developed
+
+x
+
+MAQGene that I used to analyze lsy-27 sequencing results and Gregory Minevich
+developed CloudMap that facilitates analysis on the whole genome sequencing; Irini
+Topalidou taught me yeast one-hybrid assays and troubleshot with patience. I especially
+thank Nuria Flames for her kindness in offering strains as well as her invaluable advice. I
+also thank Abhishek Bhattacharya and Pat Gordon from our lab, Jessica Nelson from the
+Colón-Ramos lab, and Namiko Abe from the Mann lab for help on the ttx-3/unc-86
+project.
+I would like to extend my gratitude to members of the McCabe lab, the Grueber
+lab, the Grishok lab, the Chalfie lab and the Greenwald lab, who provided great
+comments and feedbacks on my projects during joint meetings, and created the wonderful
+and collaborative scientific community at Columbia University. I would like to thank Dr.
+Iva Greenwald in particular, who not only generously lent her lab reagents and equipment
+to the Hobertians, but also shared enormous insightful ideas and experience with us, both
+scientifically and personally.
+I also would like to thank my thesis committee members, Dr. Iva Greenwald, Dr.
+Martin Chalfie, Dr. Rene Hen, Dr. Daniel Colón-Ramos for their insight and guidance. I
+thank Dr. Daniel Kalderon for being on my qualifying committee. I am happy to have
+been part of the Biological Sciences program and I thank Sarah Kim and Jaya Santosh
+from the Biology office for administrative assistance.
+Lastly, to my mom and dad, for their unconditional love and support for me to
+pursue my dreams, even if it involves being thousands of miles away from home. To my
+husband Zhu, for always believing in me and encouraging me to follow my passion both
+
+xi
+
+in science and in life. And to dear baby Hanna for being such a good little girl for the past
+nine months, and for making our family complete.
+
+
