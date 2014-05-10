@@ -3,10 +3,13 @@
 import sys, os
 import re
 import string
-import parse_ack
 from nltk.corpus import stopwords
+from nltk.stem.wordnet import WordNetLemmatizer
 
-def extract_features (text, remove_utf8) :
+import parse_ack
+import parse_words
+
+def extract_features (text, pos_words, neg_words, remove_utf8) :
     # Clean up text (remove punctuation, etc.)
 
     # Convert everything to lower case
@@ -32,15 +35,28 @@ def extract_features (text, remove_utf8) :
     # Remove stop words
     word_list = [w for w in word_list if not w in stopwords.words('english')]
 
-    # Get bag of words
+    # Do stemming
+    lmtzr = WordNetLemmatizer()
+    word_list = [lmtzr.lemmatize(word) for word in word_list]
+
+    # Get bag of words, number of positive words, number
+    # of negative words
     bag_of_words = dict()
+    pos_words_count = 0
+    neg_words_count = 0
     for w in word_list :
         if w in bag_of_words :
             bag_of_words[w] += 1
         else :
             bag_of_words[w] = 1
 
-    return bag_of_words, word_count
+        if w in pos_words :
+            pos_words_count += 1
+        if w in neg_words :
+            neg_words_count += 1
+
+
+    return bag_of_words, word_count, pos_words_count, neg_words_count
 
 def extract_features_main () :
     # Parse command line arguments
@@ -57,10 +73,17 @@ def extract_features_main () :
         sys.exit()
     print ack_text
 
+    # Get directory of script
+    script_dir = os.path.dirname(os.path.realpath(__file__))
+    pos_words = parse_words.parse_words (script_dir + "/../opinion-lexicon-English/positive-words.txt")
+    neg_words = parse_words.parse_words (script_dir + "/../opinion-lexicon-English/negative-words.txt")
+
     # Extract the features from the acknowledgement section
     print "Extracting features..."
-    bag_of_words, word_count = extract_features(ack_text, False)
+    bag_of_words, word_count, pos_count, neg_count = extract_features(ack_text, pos_words, neg_words, False)
     print "Acknowledgement section length: " + str(word_count)
+    print "     Positive words count: " + str(pos_count)
+    print "     Negative words count: " + str(neg_count)
     print bag_of_words
 
 if __name__ == "__main__" :
