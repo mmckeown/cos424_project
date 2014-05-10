@@ -9,9 +9,9 @@ def cleanup_line (line) :
     # Remove page break characters
     clean_line = re.sub("\f", "", line)
     
-    # Filter utf-8  characters
-    #clean_line = clean_line.decode("utf-8")
-    #clean_line = clean_line.encode("ascii","ignore")
+    # Remove roman numeralsi
+    clean_line = re.sub("(\A|\b)M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})(\b|\n)", "", clean_line)
+    clean_line = re.sub("(\A|\b)m{0,4}(cm|cd|d?c{0,3})(xc|xl|l?x{0,3})(ix|iv|v?i{0,3})(\b|\n)", "", clean_line)
 
     return clean_line
 
@@ -38,9 +38,10 @@ def parse_ack (filename) :
             page_count += 1
 
         # Create a stripped line where we remove 
-        # page breaks, colons, whitespace, and convert
-        # all characters to lower case to compare
-        # headings to identify the acknowledgment section
+        # page breaks, digits, punctuation, some weird
+        # utf-8 or unicode character, roman numerals, 
+        # whitespace, and convert all characters to lower 
+        # case to compare headings to identify the acknowledgment section
         stripped_line = re.sub("\f", "", line)
         stripped_line = re.sub("[0-9]", "", stripped_line)
         stripped_line = re.sub("[%s]" % re.escape(string.punctuation), "", stripped_line)
@@ -60,7 +61,6 @@ def parse_ack (filename) :
                stripped_line == "aknowledgements" :
                 in_ack = True
                 ack_page_begin = page_count
-                acknowledgement_text += cleanup_line(line)
         else :
             if stripped_line == "tableofcontents" or \
                stripped_line == "contents" or \
@@ -94,27 +94,28 @@ def parse_ack (filename) :
             # Restart if we found another acknowledgement
             # heading, the first was likely in the ToC
             elif stripped_line == "acknowledgment" or \
-               stripped_line == "acknowledgement" or \
-               stripped_line == "acknowledgments" or \
-               stripped_line == "acknowledgements" or \
-               stripped_line == "aknowledgment" or \
-               stripped_line == "aknowledgement" or \
-               stripped_line == "aknowledgments" or \
-               stripped_line == "aknowledgements" :
+                 stripped_line == "acknowledgement" or \
+                 stripped_line == "acknowledgments" or \
+                 stripped_line == "acknowledgements" or \
+                 stripped_line == "aknowledgment" or \
+                 stripped_line == "aknowledgement" or \
+                 stripped_line == "aknowledgments" or \
+                 stripped_line == "aknowledgements" :
                 ack_page_begin = page_count
-                acknowledgement_text = cleanup_line(line) 
             # If we exceed a certain page number, give up
             elif (page_count - ack_page_begin) > 5 :
                 success = False
                 break;
             else :
-                acknowledgement_text += (cleanup_line(line))
+                clean_line = cleanup_line(line)
+                if not clean_line.isspace():
+                    acknowledgement_text += (clean_line)
     contents.close()
 
     # Remove the converted file
     os.remove(txt_contents)
 
-    return success, acknowledgement_text
+    return success, acknowledgement_text 
 
 
 def parse_ack_main() :
