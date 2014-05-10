@@ -9,8 +9,8 @@ import re
 
 ## Example arguments:
 # title = "Princeton University"
-# max_records = "30"
-# output_dir = '/Users/Byron/Desktop/delete' # root directory in which PDFs will be saved
+# max_records = 30
+# output_dir = '/Users/Byron/Documents/ProQuestScraped' # root directory in which PDFs will be saved
 
 
 def scrape(title, max_records, output_dir):
@@ -63,29 +63,44 @@ def scrape(title, max_records, output_dir):
     
     numresponse = int(root[1].text)
     print("%d responses" % numresponse)
-
-    filenames = []
+    
+    pdfs = dict()
     for i,elem in enumerate(root[2]): # iterate over individual query responses (documents)  
-        
-        pdfpage_elems = elem.findall(".//*[@tag='856'][@ind2='0']/*[@code='u']")
-        
-        if(pdfpage_elems):
+          pdfpage_elems = elem.findall(".//*[@tag='856'][@ind2='0']/*[@code='u']") # may be empty
+          
+          abspage_url = elem.findall(".//*[@tag='856'][@ind2='1']/*[@code='u']")[0].text # always exists
+          
+          if(pdfpage_elems): # only continue if there is a link to fulltext doc
             pdfpage_url = pdfpage_elems[0].text
-            
-            # example metadata extraction:
-            author = elem.findall(".//*[@tag='100']/*")[0].text
-            
-            ## Put further XML extractions here.
-            
-            ## Add export of desired metadata to CSV.
-            
+            # Load page with abstract and indexing details
+            resp_abs = s.get(abspage_url)
+            if resp_abs.status_code != 200:
+              print("Error -- abstract page query returned code %d" % (resp_abs.status_code,))
+              print("Url was %s" % (abspage_url))
+              print("Raising exception if necessary...")
+              resp_abs.raise_for_status()
+              
+            soup_abs = bs(resp_abs.text)
+        
+            index_dict = dict()   
+            info_rows = soup_abs.select('.display_record_indexing_row')
+            for row in info_rows:
+              index_fieldname = row.select('div')[0].text.encode().strip()
+              index_dict[index_fieldname] = []
+              for index_result in row.select('div')[1].select('span'):
+                index_dict[index_fieldname].append(index_result.text.encode().strip())
+              for index_result in row.select('div')[1].select('a'):
+                index_dict[index_fieldname].append(index_result.text.encode().strip())
+              if len(index_dict[index_fieldname]) == 0:
+                index_dict[index_fieldname].append(row.select('div')[1].text.encode().strip())
+          
             # Load page with embedded PDF
             resp2 = s.get(pdfpage_url)
             if resp2.status_code != 200:
-                print("Error -- embedded PDF page query returned code %d" % (resp2.status_code,))
-                print("Search url was %s" % (pdfpage_url))
-                print("Raising exception if necessary...")
-                resp2.raise_for_status()
+              print("Error -- embedded PDF page query returned code %d" % (resp2.status_code,))
+              print("Url was %s" % (pdfpage_url))
+              print("Raising exception if necessary...")
+              resp2.raise_for_status()
             
             # Analyse page with embedded PDF. Pull PDF url from 'open with your PDF reader' links.
             soup = bs(resp2.text)
@@ -109,11 +124,10 @@ def scrape(title, max_records, output_dir):
             except IOError:
                 os.makedirs(os.path.join(output_dir, dir_query_title))
                 file = open(os.path.join(output_dir, dir_query_title, 'response%d.pdf' % i), 'w')
-            filenames.append (os.path.join(output_dir, dir_query_title, 'response%d.pdf' % i))
+            pdfs[os.path.join(output_dir, dir_query_title, 'response%d.pdf' % i)] = index_dict
             file.write(resp3.content)
             file.close()
-
-    return filenames
+    return pdfs
 
 def scrape_main():
     # Parse command line arguments
