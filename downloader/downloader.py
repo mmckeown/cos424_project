@@ -13,7 +13,8 @@ import re
 # output_dir = '/Users/Byron/Documents/ProQuestScraped' # root directory in which PDFs will be saved
 
 
-def scrape(title, max_records, output_dir):
+def scrape(title, max_records, output_dir, start_record=1):
+    start_record = max(int(start_record), 1)
     # Define search parameters
     search_params = {
         'author' : '',
@@ -34,7 +35,7 @@ def scrape(title, max_records, output_dir):
         'operation' : 'searchRetrieve',
         'version' : '1.2',
         'maximumRecords' : max_records,
-        'startRecord' : '1',
+        'startRecord' : start_record,
         'query' : search_str,
     }
     
@@ -59,13 +60,14 @@ def scrape(title, max_records, output_dir):
     
     # Analyse xml response. Pull out author name and url for the page with embedded PDF.
     # Currently pulls all authors and urls which have 'fulltext'-indicated links
-    root = ET.fromstring(resp1.text.encode('utf8'))
+    root = ET.fromstring(resp1.text.encode('utf-8'))
     
     numresponse = int(root[1].text)
     print("%d responses" % numresponse)
     
     pdfs = dict()
-    for i,elem in enumerate(root[2]): # iterate over individual query responses (documents)  
+    for j,elem in enumerate(root[2]): # iterate over individual query responses (documents)
+          i = j + start_record - 1
           pdfpage_elems = elem.findall(".//*[@tag='856'][@ind2='0']/*[@code='u']") # may be empty
           
           abspage_url = elem.findall(".//*[@tag='856'][@ind2='1']/*[@code='u']")[0].text # always exists
@@ -85,14 +87,14 @@ def scrape(title, max_records, output_dir):
             index_dict = dict()   
             info_rows = soup_abs.select('.display_record_indexing_row')
             for row in info_rows:
-              index_fieldname = row.select('div')[0].text.encode().strip()
+              index_fieldname = row.select('div')[0].text.encode('ascii','ignore').strip()
               index_dict[index_fieldname] = []
               for index_result in row.select('div')[1].select('span'):
-                index_dict[index_fieldname].append(index_result.text.encode().strip())
+                index_dict[index_fieldname].append(index_result.text.encode('ascii','ignore').strip())
               for index_result in row.select('div')[1].select('a'):
-                index_dict[index_fieldname].append(index_result.text.encode().strip())
+                index_dict[index_fieldname].append(index_result.text.encode('ascii','ignore').strip())
               if len(index_dict[index_fieldname]) == 0:
-                index_dict[index_fieldname].append(row.select('div')[1].text.encode().strip())
+                index_dict[index_fieldname].append(row.select('div')[1].text.encode('ascii','ignore').strip())
           
             # Load page with embedded PDF
             resp2 = s.get(pdfpage_url)
@@ -131,10 +133,10 @@ def scrape(title, max_records, output_dir):
 
 def scrape_main():
     # Parse command line arguments
-    if len(sys.argv[1:]) != 3:
-        print "Usage: " + sys.argv[0] + " <title query> <max results> <output dir>"
+    if len(sys.argv[1:]) <= 2 or len(sys.argv[1:]) > 4:
+        print "Usage: " + sys.argv[0] + " <title query> <max results> <output dir> [start record]"
         sys.exit()
-    pars = sys.argv[1:4]
+    pars = sys.argv[1:]
     scrape(*pars)
 
 if __name__ == "__main__":
