@@ -6,7 +6,7 @@ import pickle
 
 def multipage_scraper(uni_name, output_dir, maxpage):
   pdfs = dict()
-  for i in range(1,10):
+  for i in range(1,maxpage+1):
     partial_dict = stack_scraper(uni_name, output_dir, i)
     pdfs.update(partial_dict)
     
