@@ -19,6 +19,7 @@ def scrape(title, max_records, output_dir, start_record=1):
     # Define search parameters
     search_params = {
         'author' : '',
+        'abstract' : '',
         'title' : '"%s"' % title # multi-word titles should always be quoted (it seems?)
     }
     
