@@ -15,7 +15,7 @@ def multipage_scraper(uni_name, output_dir, maxpage):
   
   try:
     dict_file = open(os.path.join(output_dir, dir_query_title, 'multipage_metadata.pyobj'), 'w')
-    pickle.dump(pdfs,file_allmeta)
+    pickle.dump(pdfs,dict_file)
     dict_file.close()
   except:
     print("Tried to write out multipage metadata dictionary, but failed.")
@@ -32,7 +32,7 @@ def stack_scraper(uni_name, output_dir, page=1, pos=1):
   dir_query_title = re.sub(" ", "_", dir_query_title)
   try:
     dict_file = open(os.path.join(output_dir, dir_query_title, 'all_metadata%d.pyobj' % page), 'w')
-    pickle.dump(pdfs,file_allmeta)
+    pickle.dump(pdfs,dict_file)
     dict_file.close()
   except:
     print("Tried to write out full metadata dictionary, but failed.")
