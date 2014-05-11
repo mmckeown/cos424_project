@@ -22,14 +22,17 @@ def stack_scraper(uni_name, output_dir, page=1, pos=1):
   return pdfs
 
 def uni_scrape(uni_name, output_dir, page=1, pos=1, num=5):
+  page = int(page)
   s = requests.session()
-  base_url = 'http://search.proquest.com/'
+  base_url = 'http://search.proquest.com'
   results_url = base_url + '/pqdtft/results/CA0B51DFD4B24080PQ/'+str(page)+'/$5bqueryType$3dadvanced:pqdtft$3b+sortType$3dDateDesc$3b+searchTerms$3d$5b$3cschoolName$3dAND$7csch:Exact$28$22' + urllib2.quote(uni_name) +'$22$29$3e$5d$3b+searchParameters$3d$7bNAVIGATORS$3dnavsummarynav,languagenav$28filter$3d200$2f0$2f*$29,decadenav$28filter$3d110$2f0$2f*,sort$3dname$2fascending$29,yearnav$28filter$3d1100$2f0$2f*,sort$3dname$2fascending$29,yearmonthnav$28filter$3d120$2f0$2f*,sort$3dname$2fascending$29,monthnav$28sort$3dname$2fascending$29,daynav$28sort$3dname$2fascending$29,+RS$3dOP,+flags$3dORIGINALEMPTY+FT,+chunkSize$3d100,+instance$3dprod.academic,+ftblock$3d740842+1+660848+670831+194104+194001+670829+194000+660843+660840+104,+removeDuplicates$3dtrue$7d$3b+metaData$3d$7bUsageSearchMode$3dAdvanced,+dbselections$3d10000011,+SEARCH_ID_TIMESTAMP$3d1399784603543,+fdbok$3dN,+siteLimiters$3dManuscriptType,_$25Language$7d$5d?source=fedsrch'# + '&accountID=' + str(accountID)
   print('Loading %s' % results_url)
   results = s.get(results_url)
   print("Response code %d" % results.status_code)
   if page > 1:
-    results_url = base_url + '/results.bottompagelinks:gotopage/2?site=pqdtft&t:ac=F14A376B04AC4960PQ/1'
+    p1_soup = bs(results.text)
+    page_url = p1_soup.find_all(title='Page %i' % page)[0]['href']
+    results_url = base_url + page_url
     print('Loading %s' % results_url)
     results = s.get(results_url)
     print("Response code %d" % results.status_code)
@@ -41,6 +44,12 @@ def uni_scrape(uni_name, output_dir, page=1, pos=1, num=5):
   dir_query_title = re.sub("\"", "", uni_name)
   dir_query_title = re.sub(" ", "_", dir_query_title)
   errors = 0
+  
+  if len(pdfelems) == 0:
+    print("No PDF link found!")
+    file_page = open(os.path.join(output_dir, dir_query_title, 'allerrorpage%d.html' % page), 'w')
+    file_page.write(results.text.encode('ascii','ignore'))
+    file_page.close()
   
   for j, pdfelem in enumerate(pdfelems):
     if errors >=3:
