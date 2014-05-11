@@ -67,22 +67,26 @@ def scrape_data (title, max_records, output_dir) :
     # Create a attributes CSV
     fp = open(output_dir + "/" + re.sub(" ", "_", title) + "/" + "attributes.csv", "w")
     fp.write("docid,word_count,pos_count,neg_count")
-    for attr in pdfs[pdfs.keys()[0]] :
+    attrs = pdfs[pdfs.keys()[0]]
+    for attr in attrs :
         if attr != "ProQuest document ID" :
             fp.write("," + attr)
     fp.write("\n")
     for pdf in pdfs :
         fp.write(pdfs[pdf]["ProQuest document ID"][0] + "," + str(pdf_data[pdf]["word_count"]) + "," + \
                  str(pdf_data[pdf]["pos_count"]) + "," + str(pdf_data[pdf]["neg_count"]))
-        for attr in pdfs[pdf] :
+        for attr in attrs :
             if attr != "ProQuest document ID" :
                 fp.write(",")
-                if len(pdfs[pdf][attr]) > 1 :
-                    fp.write(re.sub("[,;]", "", pdfs[pdf][attr][0]))
-                    for val in pdfs[pdf][attr][1:] :
-                        fp.write(";" + re.sub("[,;]", "", val))
-                else :
-                    fp.write (re.sub("[,;]", "", pdfs[pdf][attr][0]))
+                try:
+                    if len(pdfs[pdf][attr]) > 1 :
+                        fp.write(re.sub("[,;]", "", pdfs[pdf][attr][0]))
+                        for val in pdfs[pdf][attr][1:] :
+                            fp.write(";" + re.sub("[,;]", "", val))
+                    else :
+                        fp.write (re.sub("[,;]", "", pdfs[pdf][attr][0]))
+                except:
+                    pass
         fp.write("\n")
     fp.close()
 
