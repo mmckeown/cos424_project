@@ -42,6 +42,7 @@ def scrape_data (title, max_records, output_dir) :
             pdf_data[pdf]["neg_count"] = neg_count
         else :
             print "Error parsing acknowledgement section...dropping PDF"
+            del pdfs[pdf]
 
     # Create a bag of words CSV
     all_words = set()
