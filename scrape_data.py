@@ -11,11 +11,16 @@ import downloader
 import parse_ack
 import parse_words
 import extract_features
+import metadata_aggregator
 
-def scrape_data (title, max_records, output_dir) :
+def scrape_data (title, max_records, output_dir, download=True) :
     # Scrape PDFs
-    pdfs = downloader.scrape(title, max_records, output_dir)   
-    print str(pdfs)
+    if int(download) :
+        pdfs = downloader.scrape(title, max_records, output_dir)
+    else :
+        dir_query_title = re.sub("\"", "", title)
+        dir_query_title = re.sub(" ", "", dir_query_title)
+        pdfs = metadata_aggregator.aggregate_metadata(os.path.join(output_dir, dir_query_title))
     
     # Parse the positive and negative words lists
     pos_words = parse_words.parse_words (scrape_data_script_dir + "/opinion-lexicon-English/positive-words.txt")
@@ -23,6 +28,7 @@ def scrape_data (title, max_records, output_dir) :
 
     # Iterate over PDFs and process them into features
     pdf_data = dict()
+    to_delete = []
     for pdf in pdfs :
         # Parse acknowledgement section
         print "Parsing acknowledgement section from " + pdf + "..."
@@ -42,7 +48,11 @@ def scrape_data (title, max_records, output_dir) :
             pdf_data[pdf]["neg_count"] = neg_count
         else :
             print "Error parsing acknowledgement section...dropping PDF"
-            del pdfs[pdf]
+            to_delete.append(pdf)
+
+    # Delete dropped pdfs
+    for pdf in to_delete :
+        del pdfs[pdf]
 
     # Create a bag of words CSV
     all_words = set()
@@ -93,10 +103,10 @@ def scrape_data (title, max_records, output_dir) :
 
 def scrape_data_main () :
     # Parse command line arguments
-    if len (sys.argv[1:]) != 3 :
-        print "Usage: " + sys.argv[0] + " <title query> <max results> <output dir>"
+    if len (sys.argv[1:]) < 3 or len(sys.argv[1:]) > 4 :
+        print "Usage: " + sys.argv[0] + " <title query> <max results> <output dir> [download]"
         sys.exit ()
-    pars = sys.argv[1:4]
+    pars = sys.argv[1:]
     
     # Scrape the data
     scrape_data(*pars)
