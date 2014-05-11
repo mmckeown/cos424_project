@@ -6,6 +6,7 @@ import requests
 import urllib
 import sys, os
 import re
+import pickle
 
 ## Example arguments:
 # title = "Princeton University"
@@ -126,6 +127,9 @@ def scrape(title, max_records, output_dir, start_record=1):
             except IOError:
                 os.makedirs(os.path.join(output_dir, dir_query_title))
                 file = open(os.path.join(output_dir, dir_query_title, 'response%d.pdf' % i), 'w')
+            file_meta = open(os.path.join(output_dir, dir_query_title, 'response%d_metadata.pyobj' % i), 'w')
+            pickle.dump(index_dict, file_meta)
+            file_meta.close()
             pdfs[os.path.join(output_dir, dir_query_title, 'response%d.pdf' % i)] = index_dict
             file.write(resp3.content)
             file.close()
