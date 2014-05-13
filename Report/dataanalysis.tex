@@ -1,3 +1,7 @@
-How we analysed the data, once we had it out of the PDFs and into R.
+The dataset we collected is very rich -- however, due to time constraints and the unexpected complexity of data collection and feature extraction, we were unable to implement some of the more complex analyses we had hoped to include.
 
-Models we used (gaussian emission, and naive bayes). Issues with implementing the models.
+The first stage of our procedure was to perform sentiment analysis on each element of the document corpus. For this, we chose to count the occurrences of the top 6000 positively-associated words as learned through analysis of online opinion texts.\footnote{See Minqing Hu and Bing Liu. ``Mining and Summarizing Customer Reviews.", Proceedings of the ACM SIGKDD International Conference on Knowledge, Discovery and Data Mining (KDD-2004), Aug 22-25, 2004, Seattle, Washington, USA} This gave us a count of ``positive words'' occurring in the document, from which we derived the document's ``positivity ratio'' as the ratio of positive words to total words. This creates a measure of positivity which is less correlated with document length.
+
+Under our first model, we make the assumption that the happiness distribution of graduate students is gaussian, conditional on their university. Using the positivity ratio of the acknowledgement sections as a proxy for student happiness, we use the maximum likelihood estimates under this model to determine the mean and variance of each Ivy League university's graduate happiness.
+
+The second model we fit is 
