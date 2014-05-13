@@ -1,0 +1,25 @@
+We want to build a ranking of student enjoyment and satisfaction on graduate (PhD) programs at universities across the US. 
+
+We want to do this for a couple of reasons: It's pretty entertaining, for one, but it's also valuable information for any prospective graduate student trying to decide where to apply, or which offers to accept. The current tools available for doing this are pretty limited: sites such as {\tt usnews.com} and {\tt forbes.com} offer little if any information on student satisfaction, while less formal ranking systems such as {\tt collegeprowler.com} (now moved to {\tt colleges.niche.com}) have sparse data and suffer from the bias problems inherent in any crowd sourced review system.
+
+------------
+
+As mentioned above, there are a number of review websites which offer partial data on student satisfaction in graduate programs. There are also several university-specific results on student satisfaction; internal surveys done by universities to gauge what they are doing well and what needs to be improved.\footnote{Some examples: \verb|http://www.utexas.edu/news/2011/12/01/grad_climate_study/|, \\
+\verb|http://www.ohio.edu/education/news-and-events/upload/Final-2013-Student-Satisfaction-Report-8-23-13.pdf|,\\
+\verb|http://ga.berkeley.edu/files/page/surveyreport.pdf|}
+
+We would like to take a completely different approach to the problem: using sentiment analysis on the acknowledgment sections of submitted theses to try and gauge how satisfied students were at the point where they finish their degrees and are about to leave the university.
+
+There are 3.6 million english PhD theses listed on \verb|proquest.com|. We propose to use a subset of these as our text corpus, most likely selecting a thousand or so from each of several top-ranked US universities. We will then extract the acknowledgments text from each thesis, run a (possibly made-from-scratch) sentiment analysis algorithm on it, and use these to build a profile of the university's student satisfaction.
+
+While the rankings website data is useful as a sanity-check for our model (we expect our results to correlate strongly with the rankings, but probably not exactly), the university-commissioned student satisfaction surveys should give a good value for the ground-truth values, and we can use these to validate the predictive power of our algorithm. We can also use resources such as \verb|http://nlp.stanford.edu:8080/sentiment/rntnDemo.html| to check the performance of our sentiment analysis algorithm if we choose to develop one from scratch ourselves.
+
+-----------
+
+In attempting to rank university graduate programs based on student satisfaction, we would like to apply machine learning techniques to a text corpus consisting of dissertation acknowledgment sections from different universities.   We believe there will be a correlation between features of the dissertation acknowledgment sections and student satisfaction.  For example, if an acknowledgment is longer and more positive, it may indicate the student is more satisfied than terse acknowledgment sections.
+
+We plan to explore a small collection of methods to extract university rankings based on the dissertation acknowledgments.  We will first need to extract features from the acknowledgments.  A couple features we have discussed already include the length of the acknowledgment section and the count of keywords in the text that may have a positive or negative connotation, however, there are probably others that we will explore as well.  The features could then be used individually to obtain some sort of score for each acknowledgment (in which an average for each university would result in a ranking) or could be aggregated for each university (based on all acknowledgments from the university) and obtain a ranking score for each university.
+
+As for the machine learning algorithms, there are a number of different approaches to explore.  As mentioned previously, we could use sentiment analysis to obtain a score for how positive or negative an acknowledgment section is.  This would allow us to rank universities based on their average sentiment score.  Another possibility is to use a regression to determine a score for each acknowledgment or university.  We could also use a binary classifier to determine if a given acknowledgment is better than another and use this information to determine a score for an acknowledgment or university.  
+
+There are also machine learning algorithms specifically tailored toward ranking, such as Ranking SVM, Bayes Rank, etc.  While we have not done too much research into how these algorithms work and the assumptions they make yet, we plan to do so in determining which ones we will explore.  In short, there are many data analysis techniques that can be applied to this problem, and we intend to explore a subset of them that make valid assumptions about our problem and match up with the type of data we have and our goal.
