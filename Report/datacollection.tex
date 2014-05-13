@@ -1,11 +1,3 @@
-Write about how we collected the data -- how we scraped it, what methods we used to decide exactly which PhDs to get, and so on.
-
-Then talk about how we got the acknowledgements sections out of the PDFs. What the issues were? How often extraction failed, roughly. Bag of words and positive ratio extraction from the text.
-
-[Remove this section before submission]
-
----------
-
 The theses used for our analysis were taken from the ProQuest Full Text Thesis and Dissertation Database\footnote{Searchable via \texttt{http://search.proquest.com/pqdtft/}}. This database contains 1.5 million theses, when doing searches for English-language documents with full text available. The database includes metadata specifying features such as date of submission, University, Department, subject, and so on. All of this is freely available to licensed users -- notably, any user whose requests originates from within the IP block of a subscribing university (such as Princeton).
 
 The data collection occurred in two stages: collecting the theses, and then running a parsing and extraction routine on them to pull out the text of the acknowledgements section.  Figure~\ref{fig:data_collect_block_diagram} shows a block diagram of this data collection process.
@@ -23,6 +15,8 @@ ProQuest has a database API exposed at \texttt{http://fedsearch.proquest.com/}. 
 We were successful in reverse-engineering the API to the extent where we could collect 1000 URLs of fulltext English theses. This is the dataset we went on to use for an analysis of PhD satisfaction by state over the United States. However, this dataset was insufficient for any analysis of individual universities.
 
 At this point we switched to scraping documents via the standard, human-facing ProQuest search interface. When queries are made through this interface, ProQuest attempts to authenticate the humanity of the downloader using captcha-gateways for any downloads beyond a small number. Via various subterfuges, however, we were able to circumvent these measures and download 200 theses for each of the Ivy League universities.\footnote{The number 200 was chosen mainly to keep data processing times reasonable. With enough time (or compute power), our method should be easily extensible to at least several thousand theses per university} These form our second dataset.
+
+Throughout this stage of the collection process we made extensive use of the Python packages \texttt{requests} and \texttt{BeautifulSoup} for HTTP requests and HTML parsing respectively.
 
 \subsection*{Feature Extraction}
 
