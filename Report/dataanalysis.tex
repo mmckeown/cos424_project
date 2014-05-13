@@ -4,4 +4,4 @@ The first stage of our procedure was to perform sentiment analysis on each eleme
 
 Under our first model, we make the assumption that the happiness distribution of graduate students is gaussian, conditional on their university. Using the positivity ratio of the acknowledgement sections as a proxy for student happiness, we use the maximum likelihood estimates under this model to determine the mean and variance of each Ivy League university's graduate happiness.
 
-The second model we fit is 
+The second model we fit is a Naive Bayes model to predict graduate students' happiness given their location and subject field. For this, we had to extract the subject areas from the collected document metadata, and classify each subject into a field. We chose the fields "Bio/Medicine", "Other Sciences", and "Humanities", and hand-assigned the subjects into these fields. We then trained on a 70\% subset of the data and tested our model on the remaining 30\% in order to get an idea of how accurate our model was.
